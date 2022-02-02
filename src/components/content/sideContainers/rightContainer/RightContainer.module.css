@@ -4,18 +4,23 @@
   bottom: 0;
   width: 8rem;
   height: 100%;
-  animation: left-triangle-animation 2s;
+  animation: left-triangle-animation 1.6s;
 }
 
 @keyframes left-triangle-animation {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-        
-    }
+  0% {
+    opacity: 0%;
+    transform: scale(0.5);
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
 }
+
 
 .rightSide {
   position: absolute;

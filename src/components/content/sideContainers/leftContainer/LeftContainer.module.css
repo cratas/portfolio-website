@@ -9,7 +9,7 @@
   position: fixed;
   bottom: 0;
   width: 8rem;
-  animation: triangles-animation 2s;
+  animation: triangles-animation 1.5s;
 }
 
 img {
@@ -23,13 +23,16 @@ img {
   }
 }
 
- @keyframes triangles-animation {
-    0% {
-        opacity: 0%;
-      }
-      100% {
-        opacity: 100%;
-          
-      }  
+@keyframes triangles-animation {
+  0% {
+    opacity: 0%;
+    transform: scale(0.5);
+  }
+  80% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
 }
-  
