@@ -16,3 +16,8 @@ img {
     max-height: 100%;
 }
 
+@media screen and (max-width: 768px)  {
+    .imageContainer {
+        width: 6rem;
+    }
+  }
