@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from "./LeftContainer.module.css";
 
-import trianglesImage from "../../../assets/triangles.png";
+import trianglesImage from "../../../../assets/triangles.png";
 
 const LeftContainer = () => {
   return (

@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
-import { Container } from "react-bootstrap";
-
-import LeftContainer from "./components/sideContainers/leftContainer/LeftContainer";
-import RightContainer from "./components/sideContainers/rightContainer/RightContainer";
+import Content from "./components/content/Content";
+import Loader from "./components/loader/Loader";
 
 const App = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timer);
+    }
+
+  }, [])
+
   return (
     <>
-      <LeftContainer />
-      <Container style={{ backgroundColor: "red" }}>sadfasd</Container>
-      <RightContainer />
+      { isLoaded && <Content />}
+      { !isLoaded && <Loader /> }
     </>
   );
 };
