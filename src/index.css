@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+:root {
+    --font-family: 'Epilogue', sans-serif;
+
+    --color-dark: #0D0D1A;
+    --color-white: #eee;
+    --color-blue: #2D9CA6;
+}
