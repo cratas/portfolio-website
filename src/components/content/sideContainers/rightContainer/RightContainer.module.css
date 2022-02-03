@@ -4,7 +4,7 @@
   bottom: 0;
   width: 8rem;
   height: 100%;
-  animation: left-triangle-animation 1.6s;
+  animation: left-triangle-animation 1.4s;
 }
 
 @keyframes left-triangle-animation {
@@ -87,6 +87,16 @@
 
 .icon:hover {
   color: var(--color-blue);
+  animation: 0.5s icon-animation;
+}
+
+@keyframes icon-animation {
+  0% {
+    color: var(--color-white);
+  }
+  100% {
+    color: var(--color-blue);
+  }
 }
 
 @media screen and (max-height: 700px) {
