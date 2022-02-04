@@ -23,6 +23,7 @@ const App = () => {
     <>
       { isLoaded && <Content />}
       { !isLoaded && <Loader /> }
+      <Loader /> 
     </>
   );
 };

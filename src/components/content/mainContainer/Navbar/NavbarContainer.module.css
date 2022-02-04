@@ -5,20 +5,19 @@
   color: white;
   top: 1rem;
   padding: 0.5rem 2rem;
-  font-family: var(--font-family)!important;
-  background-color: transparent!important;
+  font-family: var(--font-family) !important;
+  background-color: transparent !important;
   backdrop-filter: blur(5px);
   margin-bottom: 1rem;
   letter-spacing: 1px;
   font-size: 0.9rem;
 }
 
-
 .navbarButton {
   border: 3px solid var(--color-blue);
   border-radius: 0;
-  color: var(--color-white)!important;
-  padding: 0.7rem 1.2rem 0.6rem; 
+  color: var(--color-white) !important;
+  padding: 0.7rem 1.2rem 0.6rem;
   letter-spacing: 1px;
   outline: none !important;
   font-size: 0.9rem;
@@ -26,17 +25,17 @@
 }
 
 .navbarButton:hover {
-  color: var(--color-dark)!important;
+  color: var(--color-dark) !important;
   font-weight: bold;
   background-color: transparent;
   border: 3px solid var(--color-blue);
   background-color: var(--color-blue);
 }
 
-
-.navbarButton:active, .navbarButton:focus {
+.navbarButton:active,
+.navbarButton:focus {
   outline: none !important;
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 
 .imageContainer {
@@ -46,14 +45,13 @@
   animation: navbar-animation-1 1s;
 }
 
-
 .imageContainer img {
   max-width: 100%;
   max-height: 100%;
 }
 
 .links {
-  color: var(--color-white-dark)!important;
+  color: var(--color-white-dark) !important;
   margin-right: 1rem;
 }
 
@@ -76,14 +74,14 @@
 
 .links:hover,
 .links.active {
-  color: white!important;
+  color: white !important;
 }
 
 .navbarToggle {
   border: none;
   padding: 0;
-  margin: 0;
   animation: 1s navbar-animation-2;
+  margin-right: -8px;
 }
 
 .navbarToggle:focus {
@@ -93,6 +91,26 @@
 
 .icon {
   color: white;
+}
+
+
+@media screen and (max-width: 992px) {
+  .navbarContainer {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbarContainer {
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbarContainer {
+    padding: 0.5rem 0rem;
+
+  }
 }
 
 @keyframes navbar-animation-1 {
@@ -178,6 +196,3 @@
     transform: scale(1);
   }
 }
-
-
-

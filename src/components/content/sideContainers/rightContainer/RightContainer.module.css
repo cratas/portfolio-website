@@ -99,27 +99,13 @@
   }
 }
 
-@media screen and (max-height: 700px) {
-  .leftSide {
-    display: none;
-  }
-
-  .rightTriangle {
-    display: none;
-  }
-
-  .rightSide {
-    height: 8rem;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .rightContainer {
     display: none;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .leftSide {
     display: none;
   }
@@ -132,3 +118,5 @@
     height: 8rem;
   }
 }
+
+
