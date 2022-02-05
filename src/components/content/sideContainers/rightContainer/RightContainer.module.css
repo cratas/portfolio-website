@@ -28,7 +28,8 @@
   bottom: 0;
   width: 4.5rem;
   height: 58%;
-  border-left: 3px solid var(--color-white);
+  border-left: 2px solid var(--color-white);
+  border-image: linear-gradient(var(--color-white) 40%, var(--color-dark) 95%) 0 100% ;
 }
 
 
@@ -39,7 +40,8 @@
   width: 3rem;
   height: 51%;
   margin-right: 0.5rem;
-  border-right: 4px solid var(--color-blue); /* 1px more because object with lighter colour seems bigger by human eye  */
+  border-right: 2px solid var(--color-blue); /* 1px more because object with lighter colour seems bigger by human eye  */
+  border-image: linear-gradient(var(--color-dark) 5%, var(--color-blue) 50%) 0 100% ;
 }
 
 .rightTriangle {
@@ -50,7 +52,7 @@
   border-bottom: 100px solid transparent;
   /* move object little bit because of border */
   margin-top: -10px;
-  margin-left: -3px;
+  margin-left: -2px;
 }
 
 .leftTriangle {
@@ -64,16 +66,15 @@
   border-bottom: 100px solid transparent;
   /* move object little bit because of border */
   margin-bottom: -10px;
-  margin-right: -4px;
+  margin-right: -2px;
 }
 
 
 .iconsContainer {
   position: absolute;
-  bottom: 10vh;
+  bottom: 15vh;
   right: 3.4rem;
   width: 2rem;
-  /* height: 7.5rem; */
   background-color: var(--color-dark);
   padding: 1rem 0;
 }
@@ -99,6 +100,24 @@
   }
 }
 
+@media screen and (max-height: 730px) {
+  .leftSide {
+    display: none;
+  }
+
+  .rightTriangle {
+    display: none;
+  }
+
+  .rightSide {
+    height: 8rem;
+  }
+
+  .iconsContainer {
+    bottom: 10vh;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .rightContainer {
     display: none;
@@ -116,6 +135,10 @@
 
   .rightSide {
     height: 8rem;
+  }
+
+  .iconsContainer {
+    bottom: 10vh;
   }
 }
 

@@ -9,9 +9,7 @@ function Loader() {
       <div className={classes.imageWrapper}>
         <img src={mainLogo} alt="main-logo"></img>
       </div>
-      <div className={classes.progressBar}>
-        <div className={classes.progress}></div>
-      </div>
+      <div className={classes.progressBar}></div>
     </div>
   );
 }
