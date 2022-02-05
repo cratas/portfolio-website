@@ -11,9 +11,8 @@ function MainContainer() {
       <div className={classes.contentWrapper}>
         <Container className={classes.container}>
           <NavbarContainer />
-          <div className={classes.test}></div>
+          {/* <div className={classes.test}></div> */}
         </Container>
-        ;
       </div>
     </>
   );

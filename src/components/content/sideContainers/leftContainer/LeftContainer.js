@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Indicators from './Indicators';
 import classes from "./LeftContainer.module.css";
 
 import trianglesImage from "../../../../assets/triangles.png";

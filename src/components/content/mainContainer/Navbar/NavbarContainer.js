@@ -7,12 +7,22 @@ import { IoCloseSharp } from "react-icons/io5";
 import classes from "./NavbarContainer.module.css";
 
 import mainLogo from "../../../../assets/main-logo.png";
+import hoverLogo from "../../../../assets/empty-logo.png";
 
 const NavbarContainer = () => {
   const [isToggleActive, setIsToggleActive] = useState(false);
+  const [isLogoHovered, setIsLogoHovered] = useState(false);
 
   const changeToggleStatus = () => {
     setIsToggleActive((status) => !status);
+  };
+
+  const mouserEnterLogo = () => {
+    setIsLogoHovered(true);
+  };
+
+  const mouseLeaveLogo = () => {
+    setIsLogoHovered(false);
   };
 
   return (
@@ -20,9 +30,15 @@ const NavbarContainer = () => {
       <Container fluid>
         <Navbar.Brand href="#">
           <div className={classes.imageContainer}>
-            <img src={mainLogo} alt="main-logo"></img>
+            <img
+              src={!isLogoHovered ? mainLogo : hoverLogo}
+              alt="main-logo"
+              onMouseEnter={mouserEnterLogo}
+              onMouseLeave={mouseLeaveLogo}
+            ></img>
           </div>
         </Navbar.Brand>
+
         <Navbar.Toggle
           className={classes.navbarToggle}
           aria-controls="navbarScroll"
