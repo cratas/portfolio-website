@@ -1,0 +1,38 @@
+.indicatorsWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: indicators-animation 1.7s
+}
+
+.indicator {
+    padding: 0.3rem;
+    transform: rotate(45deg);
+    background-color: var(--color-white-dark);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.indicator:first-child {
+    background-color: var(--color-white);
+}
+
+@keyframes indicators-animation {
+    0% {
+      opacity: 0%;
+    }
+    80% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  @media screen and (max-width: 993px) {
+    .indicatorsWrapper{
+      display: none;
+    }
+  }
+  
