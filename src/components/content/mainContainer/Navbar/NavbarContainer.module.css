@@ -2,25 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
   top: 1rem;
   padding: 0.5rem 2rem;
   font-family: var(--font-family) !important;
   background-color: transparent !important;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   margin-bottom: 1rem;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
+  border-bottom: 1px solid var(--color-white);
+  border-top: 1px solid var(--color-white);
+  animation: 1s navbar-border-animation;  
+  /* border-image: linear-gradient(to right, var(--color-dark) 0%, var(--color-white) 50%,  var(--color-dark) 100%) 100% 1; */
+
 }
 
 .navbarButton {
-  border: 3px solid var(--color-blue);
+  border: 2px solid var(--color-blue);
   border-radius: 0;
   color: var(--color-white) !important;
-  padding: 0.7rem 1.2rem 0.6rem;
-  letter-spacing: 1px;
+  padding: 0.6rem 1.2rem 0.6rem;
   outline: none !important;
-  font-size: 0.9rem;
   animation: navbar-animation-6 1s;
 }
 
@@ -28,7 +28,7 @@
   color: var(--color-dark) !important;
   font-weight: bold;
   background-color: transparent;
-  border: 3px solid var(--color-blue);
+  border: 2px solid var(--color-blue);
   background-color: var(--color-blue);
 }
 
@@ -74,7 +74,7 @@
 
 .links:hover,
 .links.active {
-  color: white !important;
+  color: var(--color-white) !important;
 }
 
 .navbarToggle {
@@ -112,6 +112,16 @@
 
   }
 }
+@keyframes navbar-border-animation {
+  0% {
+    border-image: linear-gradient(to right, var(--color-white) 0%, var(--color-dark) 30%) 100% 1;
+
+  }
+  100% {
+    border-image: linear-gradient(to right, var(--color-white) 0%, var(--color-white) 100%) 100% 1;
+  }
+}
+
 
 @keyframes navbar-animation-1 {
   0% {
@@ -168,6 +178,8 @@
     transform: scale(1);
   }
 }
+
+
 
 @keyframes navbar-animation-5 {
   0% {

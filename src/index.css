@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&family=Source+Code+Pro&display=swap');
 
 :root {
-    --font-family: 'Epilogue', sans-serif;
+    --font-family: 'Source Code Pro', monospace;
 
     --color-dark: #0D0D1A;
-    --color-white: #eee;
+    --color-white: #E2E2E2;
     --color-blue: #2D9CA6;
     --color-white-dark: rgba(170, 170, 170, 0.58);
 }
