@@ -7,10 +7,9 @@
 }
 
 .indicator {
-    padding: 0.22rem;
+    padding: 0.3rem;
     transform: rotate(45deg);
-    background-color: transparent;
-    border: 2px solid var(--color-white);
+    background-color: var(--color-white-dark);
     margin-bottom: 1rem;
     cursor: pointer;
 }
