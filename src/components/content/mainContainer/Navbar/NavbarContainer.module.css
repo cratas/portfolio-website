@@ -1,15 +1,20 @@
 .navbarContainer {
   top: 1rem;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 2rem;
   font-family: var(--font-family);
   background-color: transparent;
   backdrop-filter: blur(10px);
   margin-bottom: 1rem;
   border-bottom: 1px solid;
   border-top: 1px solid;
-  animation: 2s navbar-border-animation;  
-  border-image: linear-gradient(to right, var(--color-dark) 0%, var(--color-white) 50%,  var(--color-dark) 100%) 100% 1;
-
+  animation: 2s navbar-border-animation;
+  border-image: linear-gradient(
+      to right,
+      var(--color-dark) 0%,
+      var(--color-white) 50%,
+      var(--color-dark) 100%
+    )
+    100% 1;
 }
 
 .navbarButton {
@@ -35,7 +40,7 @@
 
 .imageContainer {
   bottom: 0;
-  width: 3rem;
+  width: 2.6rem;
   float: left;
   animation: navbar-animation-1 1s;
 }
@@ -88,7 +93,6 @@
   color: white;
 }
 
-
 @media screen and (max-width: 992px) {
   .navbarContainer {
     padding: 0.5rem 1rem;
@@ -104,18 +108,27 @@
 @media screen and (max-width: 480px) {
   .navbarContainer {
     padding: 0.5rem 0rem;
-
   }
 }
 @keyframes navbar-border-animation {
   0% {
-    border-image: linear-gradient(to right, var(--color-dark) 0%, var(--color-dark) 100%) 100% 1;
+    border-image: linear-gradient(
+        to right,
+        var(--color-dark) 0%,
+        var(--color-dark) 100%
+      )
+      100% 1;
   }
   100% {
-    border-image: linear-gradient(to right, var(--color-dark) 0%, var(--color-white) 50%,  var(--color-dark) 100%) 100% 1;
+    border-image: linear-gradient(
+        to right,
+        var(--color-dark) 0%,
+        var(--color-white) 50%,
+        var(--color-dark) 100%
+      )
+      100% 1;
   }
 }
-
 
 @keyframes navbar-animation-1 {
   0% {
@@ -172,8 +185,6 @@
     transform: scale(1);
   }
 }
-
-
 
 @keyframes navbar-animation-5 {
   0% {

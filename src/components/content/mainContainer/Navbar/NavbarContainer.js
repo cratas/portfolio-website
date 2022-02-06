@@ -13,6 +13,8 @@ const NavbarContainer = () => {
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isLogoHovered, setIsLogoHovered] = useState(false);
 
+  // const links = {'home', 'about', 'work', 'contact'};
+
   const changeToggleStatus = () => {
     setIsToggleActive((status) => !status);
   };
@@ -24,6 +26,10 @@ const NavbarContainer = () => {
   const mouseLeaveLogo = () => {
     setIsLogoHovered(false);
   };
+
+  const setFocus = () => {
+      
+  }
 
   return (
     <Navbar sticky="top" expand="lg" className={classes.navbarContainer}>
@@ -58,11 +64,11 @@ const NavbarContainer = () => {
           >
             <Nav.Link
               className={classes.links + " " + classes.active}
-              href="#action1"
+              href="#"
             >
               Home
             </Nav.Link>
-            <Nav.Link className={classes.links} href="#">
+            <Nav.Link className={classes.links} href="#pecko" onClick={setFocus}>
               About
             </Nav.Link>
             <Nav.Link className={classes.links} href="#action2">
