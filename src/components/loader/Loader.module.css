@@ -29,7 +29,6 @@ img {
   height: 100%;
   animation: 3s progress-animation;
   background-color: var(--color-white);
-
 }
 
 @media screen and (max-width: 480px) {
