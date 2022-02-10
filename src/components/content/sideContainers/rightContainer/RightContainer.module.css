@@ -88,16 +88,6 @@
 
 .icon:hover {
   color: var(--color-blue);
-  animation: 0.5s icon-animation;
-}
-
-@keyframes icon-animation {
-  0% {
-    color: var(--color-white);
-  }
-  100% {
-    color: var(--color-blue);
-  }
 }
 
 @media screen and (max-height: 730px) {

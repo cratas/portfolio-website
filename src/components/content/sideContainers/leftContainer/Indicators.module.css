@@ -1,21 +1,35 @@
 .indicatorsWrapper {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: indicators-animation 1.7s
+    transform: translate(0, -50%);
+    animation: indicators-animation 1.7s;
 }
 
 .indicator {
-    padding: 0.3rem;
-    transform: rotate(45deg);
-    background-color: var(--color-white-dark);
+    width: 1rem;
+    border-top: 1px solid white;
+    border-image: linear-gradient(
+      to left,
+      var(--color-dark) 0%,
+      var(--color-white) 100%
+      /* var(--color-dark) 100% */
+    )
+    100% 1;
+    /* transform: rotate(45deg); */
+    /* background-color: var(--color-white-dark); */
     margin-bottom: 1rem;
     cursor: pointer;
 }
 
-.indicator:first-child {
-    background-color: var(--color-white);
+.indicator:nth-child(1) {
+    width: 4rem;
+    border-image: linear-gradient(
+      to left,
+      var(--color-dark) 0%,
+      var(--color-white) 100%
+      /* var(--color-dark) 100% */
+    )
+    100% 1;
 }
 
 @keyframes indicators-animation {
