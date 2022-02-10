@@ -51,7 +51,13 @@ const NavbarContainer = () => {
           onClick={changeToggleStatus}
         >
           {!isToggleActive ? (
-            <BiMenuAltRight className={classes.icon} size={54} />
+            // <BiMenuAltRight className={classes.icon} size={54} />
+            <div className={classes.toggleIcon}>
+              <div className={classes.toggleIconLine}></div>
+              <div className={classes.toggleIconLine}></div>
+              <div className={classes.toggleIconLine}></div>
+
+            </div>
           ) : (
             <IoCloseSharp className={classes.icon} size={54} />
           )}

@@ -12,11 +12,8 @@
       to left,
       var(--color-dark) 0%,
       var(--color-white) 100%
-      /* var(--color-dark) 100% */
     )
     100% 1;
-    /* transform: rotate(45deg); */
-    /* background-color: var(--color-white-dark); */
     margin-bottom: 1rem;
     cursor: pointer;
 }
@@ -27,7 +24,6 @@
       to left,
       var(--color-dark) 0%,
       var(--color-white) 100%
-      /* var(--color-dark) 100% */
     )
     100% 1;
 }
