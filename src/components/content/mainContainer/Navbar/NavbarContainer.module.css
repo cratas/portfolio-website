@@ -84,7 +84,6 @@
   margin-right: -8px;
 }
 
-
 .navbarToggle:focus {
   outline: none;
   box-shadow: none;
@@ -99,20 +98,22 @@
   margin: 0.6rem 0;
   border-top: 1px solid;
   border-image: linear-gradient(
-    to left,
-    var(--color-dark) 0%,
-    var(--color-white) 50%,
-    var(--color-dark) 100%
-  )
-  100% 1;
+      to left,
+      var(--color-dark) 0%,
+      var(--color-white) 50%,
+      var(--color-dark) 100%
+    )
+    100% 1;
 }
 
 .rotateLeft {
-  transform: rotate(45deg);
+  animation: 0.5s toggle-first-animation;
+  animation-fill-mode: forwards;
 }
 
 .rotateRight {
-  transform: rotate(-45deg);
+  animation: 0.5s toggle-second-animation;
+  animation-fill-mode: forwards;
 }
 
 @media screen and (max-width: 992px) {
@@ -133,12 +134,25 @@
   }
 }
 
-@keyframes toggle-animation {
+@keyframes toggle-first-animation {
   0% {
     transform: rotate(0deg);
+    margin: 0.6rem 0;
   }
   100% {
     transform: rotate(45deg);
+    margin: 0.6rem 0 0 0;
+  }
+}
+
+@keyframes toggle-second-animation {
+  0% {
+    transform: rotate(0deg);
+    margin: 0.6rem 0;
+  }
+  100% {
+    transform: rotate(-45deg);
+    margin: 0;
   }
 }
 
