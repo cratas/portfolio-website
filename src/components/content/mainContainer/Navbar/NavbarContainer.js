@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Navbar, Button, Container, Nav, Form } from "react-bootstrap";
-import { BiMenuAltRight } from "react-icons/bi";
+// import { BiMenuAltRight } from "react-icons/bi";
 import { IoCloseSharp } from "react-icons/io5";
 
 import classes from "./NavbarContainer.module.css";
@@ -27,9 +27,15 @@ const NavbarContainer = () => {
     setIsLogoHovered(false);
   };
 
-  const setFocus = () => {
-      
-  }
+  const setFocus = () => {};
+
+  const navbarToggleClassesFirst = isToggleActive
+    ? `${classes.toggleIconLine} ${classes.rotateLeft}`
+    : classes.toggleIconLine;
+
+  const navbarToggleClassesSecond = isToggleActive
+    ? `${classes.toggleIconLine} ${classes.rotateRight}`
+    : classes.toggleIconLine;
 
   return (
     <Navbar sticky="top" expand="lg" className={classes.navbarContainer}>
@@ -50,17 +56,20 @@ const NavbarContainer = () => {
           aria-controls="navbarScroll"
           onClick={changeToggleStatus}
         >
-          {!isToggleActive ? (
+          <div className={classes.toggleIcon}>
+            <div className={navbarToggleClassesFirst}></div>
+            <div className={navbarToggleClassesSecond}></div>
+          </div>
+          {/* {!isToggleActive ? (
             // <BiMenuAltRight className={classes.icon} size={54} />
             <div className={classes.toggleIcon}>
               <div className={classes.toggleIconLine}></div>
               <div className={classes.toggleIconLine}></div>
               <div className={classes.toggleIconLine}></div>
-
             </div>
           ) : (
             <IoCloseSharp className={classes.icon} size={54} />
-          )}
+          )} */}
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -68,13 +77,14 @@ const NavbarContainer = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link
-              className={classes.links + " " + classes.active}
-              href="#"
-            >
+            <Nav.Link className={classes.links + " " + classes.active} href="#">
               Home
             </Nav.Link>
-            <Nav.Link className={classes.links} href="#pecko" onClick={setFocus}>
+            <Nav.Link
+              className={classes.links}
+              href="#pecko"
+              onClick={setFocus}
+            >
               About
             </Nav.Link>
             <Nav.Link className={classes.links} href="#action2">

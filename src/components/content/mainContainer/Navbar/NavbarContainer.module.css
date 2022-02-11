@@ -84,6 +84,7 @@
   margin-right: -8px;
 }
 
+
 .navbarToggle:focus {
   outline: none;
   box-shadow: none;
@@ -106,6 +107,14 @@
   100% 1;
 }
 
+.rotateLeft {
+  transform: rotate(45deg);
+}
+
+.rotateRight {
+  transform: rotate(-45deg);
+}
+
 @media screen and (max-width: 992px) {
   .navbarContainer {
     padding: 0.5rem 1rem;
@@ -123,6 +132,16 @@
     padding: 0.5rem 0rem;
   }
 }
+
+@keyframes toggle-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
 @keyframes navbar-border-animation {
   0% {
     border-image: linear-gradient(

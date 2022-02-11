@@ -11,7 +11,7 @@ function MainContainer() {
       <div className={classes.contentWrapper}>
         <Container className={classes.container}>
           <NavbarContainer />
-          <div className={classes.test}>
+          {/* <div className={classes.test}>
             <h1>Petr Kratochvíl</h1>
             <h2>Computer science student with passion for web development.</h2>
             <p id="pecko">
@@ -19,7 +19,7 @@ function MainContainer() {
             for web development. I'am a Computer Science student from Czech
             Republic with a passion for web development.
           </p>
-          </div>
+          </div> */}
         </Container>
       </div>
     </>
