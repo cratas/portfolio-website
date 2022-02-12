@@ -17,6 +17,8 @@
     100% 1;
 }
 
+
+
 .navbarButton {
   border: 2px solid var(--color-blue);
   border-radius: 0;
@@ -104,16 +106,18 @@
       var(--color-dark) 100%
     )
     100% 1;
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
 }
 
 .rotateLeft {
-  animation: 0.5s toggle-first-animation;
-  animation-fill-mode: forwards;
+  transform: rotate(45deg);
+  margin: 0.6rem 0 0 0;
 }
 
 .rotateRight {
-  animation: 0.5s toggle-second-animation;
-  animation-fill-mode: forwards;
+  transform: rotate(-45deg);
+  margin: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -131,28 +135,6 @@
 @media screen and (max-width: 480px) {
   .navbarContainer {
     padding: 0.5rem 0rem;
-  }
-}
-
-@keyframes toggle-first-animation {
-  0% {
-    transform: rotate(0deg);
-    margin: 0.6rem 0;
-  }
-  100% {
-    transform: rotate(45deg);
-    margin: 0.6rem 0 0 0;
-  }
-}
-
-@keyframes toggle-second-animation {
-  0% {
-    transform: rotate(0deg);
-    margin: 0.6rem 0;
-  }
-  100% {
-    transform: rotate(-45deg);
-    margin: 0;
   }
 }
 

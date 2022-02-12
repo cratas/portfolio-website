@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 
-import { Navbar, Button, Container, Nav, Form } from "react-bootstrap";
-// import { BiMenuAltRight } from "react-icons/bi";
-import { IoCloseSharp } from "react-icons/io5";
+import {
+  Navbar,
+  Button,
+  Container,
+  Nav,
+  Form,
+  FormControl,
+} from "react-bootstrap";
 
 import classes from "./NavbarContainer.module.css";
 
@@ -53,30 +58,16 @@ const NavbarContainer = () => {
 
         <Navbar.Toggle
           className={classes.navbarToggle}
-          aria-controls="navbarScroll"
+          aria-controls="navbarNavAltMarkup"
           onClick={changeToggleStatus}
         >
           <div className={classes.toggleIcon}>
             <div className={navbarToggleClassesFirst}></div>
             <div className={navbarToggleClassesSecond}></div>
           </div>
-          {/* {!isToggleActive ? (
-            // <BiMenuAltRight className={classes.icon} size={54} />
-            <div className={classes.toggleIcon}>
-              <div className={classes.toggleIconLine}></div>
-              <div className={classes.toggleIconLine}></div>
-              <div className={classes.toggleIconLine}></div>
-            </div>
-          ) : (
-            <IoCloseSharp className={classes.icon} size={54} />
-          )} */}
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="ms-auto my-2 my-lg-0"
-            style={{ maxHeight: "100px" }}
-            navbarScroll
-          >
+          <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: "100px" }}>
             <Nav.Link className={classes.links + " " + classes.active} href="#">
               Home
             </Nav.Link>
@@ -94,11 +85,12 @@ const NavbarContainer = () => {
               Contact
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Button className={classes.navbarButton} variant="outline-success">
+          <Form className="d-flex flex-row-reverse bd-highlight">
+            <Button className={classes.navbarButton} variant="outline-success" >
               Resume
             </Button>
           </Form>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
