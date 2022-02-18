@@ -8,27 +8,19 @@
 }
 
 .imageWrapper {
-  width: 12rem;
   text-align: center;
-  margin-bottom: 2.5rem;
-  opacity: 100%;
+  opacity: 0;
+  animation: 2.5s progress-animation;
 }
 
-img {
+.loaderContainer img {  
   width: 5rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
-.progressBarWrapper {
-  width: 12rem;
-  height: 0.25rem;
-  background-color: var(--color-white-dark);
-}
-
-.progressBar {
-  width: 0%;
-  height: 100%;
-  animation: 3s progress-animation;
-  background-color: var(--color-white);
+.mainLogo {
+  animation: 2s opacity-animation;
 }
 
 @media screen and (max-width: 480px) {
@@ -39,19 +31,15 @@ img {
 
 @keyframes progress-animation {
   0% {
-    width: 0%;
+    transform: scale(40%);
+    opacity: 100%;
   }
   30% {
-    width: 30%;
+    transform: scale(100%);
+    opacity: 100%;
   }
-  50% {
-    width: 50%;
-  }
-  80% {
-    width: 100%;
-  }
-  100% {
-    width: 100%;
+  95% {
+    opacity: 100%;
   }
 }
 
@@ -60,9 +48,9 @@ img {
     opacity: 0%;
   }
   40% {
-    opacity: 100%;
+    opacity: 0%;
   }
-  100% {
+  60% {
     opacity: 100%;
   }
 }

@@ -1,16 +1,14 @@
-import React from "react";
 
 import classes from "./Loader.module.css";
 import mainLogo from "../../assets/main-logo.png";
+import tagsLogo from "../../assets/tags-logo.png";
 
 function Loader() {
   return (
     <div className={classes.loaderContainer}>
       <div className={classes.imageWrapper}>
-        <img src={mainLogo} alt="main-logo"></img>
-      </div>
-      <div className={classes.progressBarWrapper}>
-        <div className={classes.progressBar}></div>
+        <img src={tagsLogo} alt="main-logo"></img>
+        <img className={classes.mainLogo}  src={mainLogo} alt="main-logo"></img>
       </div>
     </div>
   );

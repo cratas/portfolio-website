@@ -4,20 +4,20 @@
   font-family: var(--font-family);
   background-color: transparent;
   backdrop-filter: blur(10px);
-  margin-bottom: 1rem;
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  animation: 2s navbar-border-animation;
-  border-image: linear-gradient(
-      to right,
-      var(--color-dark) 0%,
-      var(--color-white) 50%,
-      var(--color-dark) 100%
-    )
-    100% 1;
 }
 
-
+.navbarContainer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  border-top: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  animation: 0.5s navbar-border-animation;
+  z-index: -1;
+}
 
 .navbarButton {
   border: 2px solid var(--color-blue);
@@ -140,21 +140,10 @@
 
 @keyframes navbar-border-animation {
   0% {
-    border-image: linear-gradient(
-        to right,
-        var(--color-dark) 0%,
-        var(--color-dark) 100%
-      )
-      100% 1;
+    width: 0%;
   }
   100% {
-    border-image: linear-gradient(
-        to right,
-        var(--color-dark) 0%,
-        var(--color-white) 50%,
-        var(--color-dark) 100%
-      )
-      100% 1;
+    width: 100%;
   }
 }
 
