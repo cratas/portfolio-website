@@ -7,7 +7,7 @@ const HomeContainer = () => {
       <p data-aos="fade-up" id="top">
         Hi! I am
       </p>
-      {/* <h1 data-aos="fade-up" data-aos-delay="100" data-aos-mirror="true">
+      <h1 data-aos="fade-up" data-aos-delay="100" data-aos-mirror="true">
         Petr Kratochvíl
       </h1>
       <h2 data-aos="fade-up" data-aos-delay="200">
@@ -17,7 +17,7 @@ const HomeContainer = () => {
         I'am a Computer Science student from Czech Republic with a passion for
         web development. I'am a Computer Science student from Czech Republic
         with a passion for web development.
-      </p> */}
+      </p>
     </div>
   );
 };
