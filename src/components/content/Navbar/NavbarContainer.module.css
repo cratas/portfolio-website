@@ -92,31 +92,26 @@
 }
 
 .toggleIcon {
-  width: 3rem;
+  width: 2rem;
 }
 
 .toggleIconLine {
   width: 100%;
-  margin: 0.6rem 0;
-  border-top: 1px solid;
-  border-image: linear-gradient(
-      to left,
-      var(--color-dark) 0%,
-      var(--color-white) 50%,
-      var(--color-dark) 100%
-    )
-    100% 1;
+  margin:  0.5rem 0;
+  height: 3px;
+  background-color: var(--color-white);
     -webkit-transition: all .3s linear 0s;
     transition: all .3s linear 0s;
 }
 
 .rotateLeft {
-  transform: rotate(45deg);
-  margin: 0.6rem 0 0 0;
+  transform: rotate(135deg);
+  margin:  0 0 -0.2rem 0;
 }
 
 .rotateRight {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
+
   margin: 0;
 }
 
