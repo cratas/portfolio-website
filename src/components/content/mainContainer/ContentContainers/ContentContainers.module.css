@@ -27,12 +27,31 @@ h1 {
   font-size: 30px;
 }
 
+@media screen and (max-width: 991px) {
+  .contentWrapper {
+    padding: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentWrapper {
+    padding: 1.1rem;
+  }
+}
 
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 23px;
   }
+  .titleWrapper {
+    padding-left: 0.5rem;
+  }
+  .contentWrapper {
+    padding: 0.7rem;
+  }
 }
+
+
 
   /* .hoverName:hover {
     color: var(--color-white);
