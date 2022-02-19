@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import Content from "./components/content/Content";
 import Loader from "./components/loader/Loader";
@@ -8,6 +10,7 @@ const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    Aos.init({ duration: 1000 });
 
     const timer = setTimeout(() => {
       setIsLoaded(true);
@@ -15,22 +18,19 @@ const App = () => {
 
     return () => {
       clearTimeout(timer);
-    }
-
-  }, [])
+    };
+  }, []);
 
   return (
     <>
-      { isLoaded && <Content />}
-      { !isLoaded && <Loader /> }
+      {isLoaded && <Content />}
+      {!isLoaded && <Loader />}
       {/* <Loader/> */}
     </>
   );
 };
 
 export default App;
-
-
 
 // .loaderContainer {
 //   width: 100%;
@@ -49,7 +49,7 @@ export default App;
 //   animation: 1s progress-animation;
 // }
 
-// img {  
+// img {
 //   width: 5rem;
 //   position: absolute;
 //   transform: translate(-50%, -50%);

@@ -11,8 +11,8 @@ import {
 
 import classes from "./NavbarContainer.module.css";
 
-import mainLogo from "../../../../assets/main-logo.png";
-import hoverLogo from "../../../../assets/empty-logo.png";
+import mainLogo from "../../../assets/main-logo.png";
+import hoverLogo from "../../../assets/empty-logo.png";
 
 const NavbarContainer = () => {
   const [isToggleActive, setIsToggleActive] = useState(false);
@@ -68,7 +68,7 @@ const NavbarContainer = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: "100px" }}>
-            <Nav.Link className={classes.links + " " + classes.active} href="#">
+            <Nav.Link className={classes.links + " " + classes.active} href="#top">
               Home
             </Nav.Link>
             <Nav.Link
@@ -78,7 +78,7 @@ const NavbarContainer = () => {
             >
               About
             </Nav.Link>
-            <Nav.Link className={classes.links} href="#action2">
+            <Nav.Link className={classes.links} href="#pecko">
               Work
             </Nav.Link>
             <Nav.Link className={classes.links} href="#">

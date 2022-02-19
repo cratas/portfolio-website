@@ -1,12 +1,7 @@
 .contentWrapper {
   width: 100%;
   height: 2000px;
-  padding-right: 8rem;
-  padding-left: 8rem;
-}
-
-.container {
-  height: 2000px;
+  padding: 0 8rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -26,39 +21,3 @@
     padding: 0;
   }
 }
-
-.test {
-  width: 100%;
-  height: 100%;
-  padding: 2.5rem;
-  font-family: var(--font-family);
-  margin-top: 5rem;
-}
-
-.test h1 {
-  font-weight: bold;
-  font-size: 75px;
-  line-height: 94px;
-  text-transform: uppercase;
-  color: var(--color-white);
-}
-
-.test h2 {
-  font-weight: 700;
-  font-size: 30px;
-  color: var(--color-blue);
-  margin-bottom: 3rem;
-}
-
-.test p {
-  font-size: 21px;
-  text-align: left;
-  width: 50rem;
-  color: var(--color-white-dark);
-}
-/* @supports (-webkit-text-stroke: 1px white) {
-  h1 {
-    -webkit-text-stroke: 1px white;
-    -webkit-text-fill-color: transparent;
-  }
-} */
