@@ -11,7 +11,7 @@ const LeftContainer = () => {
       <div className={classes.imageContainer}>
         <img src={trianglesImage} alt="trianglesImage" />
       </div>
-      <Indicators />
+      {/* <Indicators /> */}
     </div>
   );
 };

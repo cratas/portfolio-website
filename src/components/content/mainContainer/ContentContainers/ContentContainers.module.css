@@ -1,31 +1,60 @@
-
 .contentWrapper {
-    width: 100%;
-    height: 80vh;
-    padding: 2.5rem;
-    font-family: var(--font-family);
-    /* background-color: rgb(9, 16, 43); */
-    margin-top: 4rem;
-  }
+  width: 100%;
+  height: 80vh;
+  padding: 2.5rem;
+  font-family: var(--font-family);
+  /* background-color: rgb(9, 16, 43); */
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
 
-  footer {
-    font-family: var(--font-family);
-    padding: 1.5rem 0 0.5rem;
-    text-align: center;
-    color: var(--color-white-dark)
-  }
-  
+
+footer {
+  font-family: var(--font-family);
+  padding: 1.5rem 0 0.5rem;
+  text-align: center;
+  color: var(--color-white-dark);
+}
+
 .titleWrapper {
   border-left: 2px solid var(--color-white-dark);
   padding-left: 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 h1 {
+  color: var(--color-white);
+  font-weight: regular;
+  width: 100%;
+  font-size: min(5vw, 4rem);
+}
+
+h2 {
   color: var(--color-white);
   font-weight: bold;
   position: relative;
   font-size: 30px;
 }
+
+h3{
+  color: var(--color-blue);
+  font-weight: bold;
+  font-size: min(5vw, 2rem);
+}
+
+p {
+  color: var(--color-white-dark);
+  font-size: 1.2em;
+  width: 60%;
+}
+
+h5 {
+  color: rgba(255, 255, 255, 0.582);
+  font-weight: normal;
+}
+
 
 @media screen and (max-width: 991px) {
   .contentWrapper {
@@ -51,9 +80,7 @@ h1 {
   }
 }
 
-
-
-  /* .hoverName:hover {
+/* .hoverName:hover {
     color: var(--color-white);
     cursor: pointer;
   }
@@ -80,7 +107,6 @@ h1 {
     color: var(--color-white-dark);
   } */
 
-
 /* 
    @supports (-webkit-text-stroke: 1px white) {
     h1 {
@@ -88,3 +114,5 @@ h1 {
       -webkit-text-fill-color: transparent;
     }
    } */
+
+   

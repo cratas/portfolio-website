@@ -1,23 +1,38 @@
 import React from "react";
 import classes from "./ContentContainers.module.css";
+import MyButton from "../../UI/MyButton";
 
 const HomeContainer = () => {
   return (
-    <div className={classes.contentWrapper} >
-      <p data-aos="fade-up" id="top">
-        Hi! I am
-      </p>
-      <h1 data-aos="fade-up" data-aos-delay="100" data-aos-mirror="true">
-        Petr Kratochvíl
-      </h1>
-      <h2 data-aos="fade-up" data-aos-delay="200">
-        Computer science student with passion for web development.
-      </h2>
-      <p data-aos="fade-up" data-aos-delay="300">
-        I'am a Computer Science student from Czech Republic with a passion for
-        web development. I'am a Computer Science student from Czech Republic
-        with a passion for web development.
-      </p>
+    <div className={classes.contentWrapper}>
+      <div>
+        <h5 data-aos="fade-up" id="top">
+          Hey! I am
+        </h5>
+        <h1 data-aos="fade-up" data-aos-delay="300">
+          Petr Kratochvíl
+        </h1>
+        <h3 data-aos="fade-up" data-aos-delay="600">
+          Frontend developer based in Czech Republic
+        </h3>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="900"
+          style={{ marginTop: "2rem" }}
+        >
+          I'am a guy who likes to do creative things, especially programming.
+          I'am a guy who likes to do creative things, especially programming.
+          I'am a guy who likes to do creative things, especially programming.
+        </p>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="1200"
+          style={{ marginTop: "5rem" }}
+        >
+          <MyButton>More about me</MyButton>
+        </div>
+      </div>
     </div>
   );
 };

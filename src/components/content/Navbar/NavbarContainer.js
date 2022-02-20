@@ -2,17 +2,16 @@ import React, { useState } from "react";
 
 import {
   Navbar,
-  Button,
   Container,
   Nav,
   Form,
-  FormControl,
 } from "react-bootstrap";
 
 import classes from "./NavbarContainer.module.css";
 
 import mainLogo from "../../../assets/main-logo.png";
 import hoverLogo from "../../../assets/empty-logo.png";
+import MyButton from "../UI/MyButton";
 
 const NavbarContainer = () => {
   const [isToggleActive, setIsToggleActive] = useState(false);
@@ -86,9 +85,9 @@ const NavbarContainer = () => {
             </Nav.Link>
           </Nav>
           <Form className="d-flex flex-row-reverse bd-highlight">
-            <Button className={classes.navbarButton} variant="outline-success" >
+            <MyButton customStyle={classes.navbarButtonAnimartion}>
               Resume
-            </Button>
+            </MyButton>
           </Form>
 
         </Navbar.Collapse>

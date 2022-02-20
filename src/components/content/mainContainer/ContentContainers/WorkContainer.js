@@ -6,7 +6,7 @@ const WorkContainer = () => {
   return (
     <div className={classes.contentWrapper}>
       <div data-aos="fade-up" className={classes.titleWrapper}>
-        <h1>Some of my work.</h1>
+        <h2>Some of my work.</h2>
       </div>
     </div>
   );

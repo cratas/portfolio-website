@@ -6,7 +6,7 @@ const ContactContainer = () => {
   return (
     <div className={classes.contentWrapper}>
       <div data-aos="fade-up" className={classes.titleWrapper}>
-        <h1>Contact me.</h1>
+        <h2>Contact me.</h2>
       </div>
     </div>
   );
