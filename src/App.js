@@ -10,7 +10,7 @@ const App = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 900 });
 
     const timer = setTimeout(() => {
       setIsLoaded(true);

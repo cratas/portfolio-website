@@ -4,16 +4,16 @@ import MyButton from "../../UI/MyButton";
 
 const HomeContainer = () => {
   return (
-    <div className={classes.contentWrapper}>
+    <div className={classes.contentWrapper} style={{marginTop: "4rem"}}>
       <div>
         <h5 data-aos="fade-up" id="top">
           Hey! I am
         </h5>
-        <h1 data-aos="fade-up" data-aos-delay="300">
-          Petr Kratochvíl
+        <h1 data-aos="fade-up" data-aos-delay="300" style={{ marginTop: "1rem" }}>
+          Petr Kratochvíl.
         </h1>
         <h3 data-aos="fade-up" data-aos-delay="600">
-          Frontend developer based in Czech Republic
+          Czech Republic based Frontend Developer.
         </h3>
         <p
           data-aos="fade-up"
