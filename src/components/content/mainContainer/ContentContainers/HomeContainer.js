@@ -4,7 +4,7 @@ import MyButton from "../../UI/MyButton";
 
 const HomeContainer = () => {
   return (
-    <div className={classes.contentWrapper} style={{marginTop: "4rem"}}>
+    <section className={classes.contentWrapper} style={{marginTop: "4rem"}} id="homeSection">
       <div className={classes.alignWrapper}>
         <h5 data-aos="fade-up" id="top">
           Hey! I am
@@ -30,10 +30,10 @@ const HomeContainer = () => {
           data-aos-delay="1200"
           style={{ marginTop: "4rem" }}
         >
-          <MyButton>More about me</MyButton>
+          <MyButton href="#aboutSection">More about me</MyButton>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

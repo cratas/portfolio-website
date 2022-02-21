@@ -1,11 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 
-import {
-  Navbar,
-  Container,
-  Nav,
-  Form,
-} from "react-bootstrap";
+import { Navbar, Container, Nav, Form } from "react-bootstrap";
 
 import classes from "./NavbarContainer.module.css";
 
@@ -13,11 +8,9 @@ import mainLogo from "../../../assets/main-logo.png";
 import hoverLogo from "../../../assets/empty-logo.png";
 import MyButton from "../UI/MyButton";
 
-const NavbarContainer = () => {
+const NavbarContainer = (props) => {
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isLogoHovered, setIsLogoHovered] = useState(false);
-
-  // const links = {'home', 'about', 'work', 'contact'};
 
   const changeToggleStatus = () => {
     setIsToggleActive((status) => !status);
@@ -67,20 +60,23 @@ const NavbarContainer = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: "100px" }}>
-            <Nav.Link className={classes.links + " " + classes.active} href="#top">
+            <Nav.Link
+              className={classes.links + " " + classes.active}
+              href="#homeSection"
+            >
               Home
             </Nav.Link>
             <Nav.Link
               className={classes.links}
-              href="#pecko"
+              href="#aboutSection"
               onClick={setFocus}
             >
               About
             </Nav.Link>
-            <Nav.Link className={classes.links} href="#pecko">
+            <Nav.Link className={classes.links} href="#workSection">
               Work
             </Nav.Link>
-            <Nav.Link className={classes.links} href="#">
+            <Nav.Link className={classes.links} href="#contactSection">
               Contact
             </Nav.Link>
           </Nav>
@@ -89,7 +85,6 @@ const NavbarContainer = () => {
               Resume
             </MyButton>
           </Form>
-
         </Navbar.Collapse>
       </Container>
     </Navbar>

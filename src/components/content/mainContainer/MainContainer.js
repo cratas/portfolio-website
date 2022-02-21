@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 
 import NavbarContainer from "../Navbar/NavbarContainer";
@@ -10,6 +11,22 @@ import FooterContainer from "./ContentContainers/FooterContainer";
 import classes from "./MainContainer.module.css";
 
 function MainContainer() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    function onScroll() {
+      setScrollPosition(window.pageYOffset);
+
+      console.log(scrollPosition);
+
+      const element = document.getElementById("aboutSection");
+      console.log(element.getBoundingClientRect().y);
+    }
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollPosition]);
+
 
   return (
     <div className={classes.contentWrapper}>
@@ -21,7 +38,6 @@ function MainContainer() {
         <WorkContainer />
         <ContactContainer />
         <FooterContainer />
-
       </Container>
     </div>
   );
