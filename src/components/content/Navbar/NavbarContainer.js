@@ -79,9 +79,9 @@ const NavbarContainer = (props) => {
   //     // console.log("ScrollPosition: " + scrollPosition);
   //   }
 
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [scrollPosition]);
+  //   window.addEventListener("scroll", onScroll);
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, [scrollPosition]);
 
   const changeToggleStatus = () => {
     setIsToggleActive((status) => !status);
