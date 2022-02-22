@@ -9,7 +9,7 @@ const HomeContainer = () => {
         <h5 data-aos="fade-up" id="top">
           Hey! I am
         </h5>
-        <h1 data-aos="fade-up" data-aos-delay="300" style={{ marginTop: "1rem" }}>
+        <h1 data-aos="fade-up" data-aos-delay="300" >
           Petr Kratochvíl.
         </h1>
         <h3 data-aos="fade-up" data-aos-delay="600">

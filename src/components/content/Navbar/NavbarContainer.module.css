@@ -36,6 +36,7 @@
 }
 
 .links {
+  /* font-size: 0.9rem; */
   color: var(--color-white-dark) !important;
   margin-right: 1rem;
 }
