@@ -9,7 +9,7 @@ const HomeContainer = () => {
         <h5 data-aos="fade-up" id="top">
           Hey! I am
         </h5>
-        <h1 data-aos="fade-up" data-aos-delay="300" >
+        <h1 data-aos="fade-up" data-aos-delay="300" style={{ marginTop: "1rem" }}>
           Petr Kratochvíl.
         </h1>
         <h3 data-aos="fade-up" data-aos-delay="600">
@@ -28,7 +28,7 @@ const HomeContainer = () => {
         <div
           data-aos="fade-up"
           data-aos-delay="1200"
-          style={{ marginTop: "4rem" }}
+          style={{ marginTop: "3rem" }}
         >
           <MyButton href="#aboutSection">More about me</MyButton>
         </div>
