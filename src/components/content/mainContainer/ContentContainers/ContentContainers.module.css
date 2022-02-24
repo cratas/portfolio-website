@@ -13,9 +13,10 @@
 
 footer {
   font-family: var(--font-family);
-  padding: 1.5rem 0 0.5rem;
+  padding: 1.5rem  0 1.5rem;
   text-align: right;
   color: var(--color-white-dark);
+  text-align: center;
 }
 
 .titleWrapper {
@@ -23,6 +24,11 @@ footer {
   padding-left: 1.5rem;
   display: table-cell;
   vertical-align: middle;
+}
+
+.iconsContainer {
+  visibility: hidden;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -89,5 +95,9 @@ h5 {
   }
   p {
     width: 80%;
+  }
+  .iconsContainer {
+    visibility: visible;
+
   }
 }

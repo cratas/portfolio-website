@@ -1,13 +1,22 @@
-import React from 'react'
+import React from "react";
+import Icon from "../../UI/Icon";
 
-import classes from './ContentContainers.module.css';
+import classes from "./ContentContainers.module.css";
 
-function FooterContainer() {
+const FooterContainer = () => {
+
   return (
     <footer>
-        <p>Designed & implemented by <span className={classes.hoverName}>Petr Kratochvíl</span></p>
+
+      <div className={classes.iconsContainer}>
+        <Icon iconType="GIT" style={{marginRight: '1rem'}} />
+        <Icon iconType="LINKEDIN" />
+      </div>
+      <div className={classes.footerText}>
+        Designed & implemented by Petr Kratochvíl
+      </div>
     </footer>
   );
-};
+}
 
 export default FooterContainer;

@@ -2,18 +2,9 @@ import React from "react";
 
 import classes from "./RightContainer.module.css";
 
-import { AiFillGithub } from 'react-icons/ai'
-import { FaLinkedin } from 'react-icons/fa'
+import Icon from "../../UI/Icon";
 
 function RightContainer() {
-
-  const openGithub = () => {
-    window.open('https://github.com/cratas', '_blank');
-  }
-
-  const openLinkedin = () => {
-    window.open('https://www.linkedin.com/feed/','_blank');
-  }
 
   return (
     <div className={classes.rightContainer}>
@@ -24,8 +15,8 @@ function RightContainer() {
         <div className={classes.leftTriangle}></div>
       </div>
       <div className={classes.iconsContainer}>
-          <AiFillGithub onClick={openGithub} className={classes.icon}/>
-          <FaLinkedin onClick={openLinkedin} className={classes.icon}/>
+          <Icon iconType="GIT" />
+          <Icon iconType="LINKEDIN" />
       </div>
     </div>
   );
