@@ -16,7 +16,6 @@ const navSlice = createSlice({
             state.about = false;
             state.work = false;
             state.contact = false;
-
         }, 
         linkAbout(state) {
             state.home = false;

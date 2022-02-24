@@ -9,7 +9,6 @@ import { navActions } from "../../../../store/nav";
 
 const HomeContainer = () => {
   const dispatch = useDispatch();
-  // const 
 
   const linkAboutHandler = () => {
     dispatch(navActions.linkAbout());

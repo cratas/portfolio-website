@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 
 import NavbarContainer from "../Navbar/NavbarContainer";
 import AboutContainer from "./ContentContainers/AboutContainer";
@@ -20,6 +20,7 @@ function MainContainer() {
         <AboutContainer />
         <WorkContainer />
         <ContactContainer />
+
         <FooterContainer />
       </Container>
     </div>

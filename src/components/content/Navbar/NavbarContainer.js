@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navbar, Container, Nav, Form } from "react-bootstrap";
 
@@ -12,75 +12,10 @@ import MyButton from "../UI/MyButton";
 
 const NavbarContainer = (props) => {
   const dispatch = useDispatch();
-  const linksState = useSelector((state) => state.nav );
+  const linksState = useSelector((state) => state.nav);
 
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isLogoHovered, setIsLogoHovered] = useState(false);
-  // const [scrollPosition, setScrollPosition] = useState(0);
-
-  // const listInnerRef = useRef();
-
-  // const onScroll = () => {
-  //   if (listInnerRef.current) {
-  //     const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
-  //     if (scrollTop + clientHeight === scrollHeight) {
-  //       console.log("reached bottom");
-  //     }
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   function onScroll() {
-  //     setScrollPosition(window.pageYOffset);
-
-  //     if (listInnerRef.current) {
-  //       const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
-  //       if (scrollTop + clientHeight === scrollHeight) {
-  //         console.log("reached bottom");
-  //       }
-  //     }
-
-  //     // const homeSectionPosition = document.getElementById("homeSection").getBoundingClientRect().top - 100;
-  //     // const aboutSectionPosition = document.getElementById("aboutSection").getBoundingClientRect().y - 100;
-  //     // const workSectionPosition = document.getElementById("workSection").getBoundingClientRect().y - 100;
-  //     // const contactSectionPosition = document.getElementById("contactSection").getBoundingClientRect().top - 100;
-
-  //     // console.log(scrollPosition);
-  //     // console.log("about " + contactSectionPosition);
-
-  //     // // eslint-disable-next-line default-case
-  //     // if(homeSectionPosition == 0) {
-  //     //   setHomeActive(true);
-  //     //   setAboutActive(false);
-  //     //   setWorkActive(false);
-  //     //   setContactActive(false);
-  //     // }
-  //     // if(aboutSectionPosition === 0.0) {
-  //     //   setHomeActive(false);
-  //     //   setAboutActive(true);
-  //     //   setWorkActive(false);
-  //     //   setContactActive(false);
-  //     // }
-  //     // if(workSectionPosition === 0.0) {
-  //     //   setHomeActive(false);
-  //     //   setAboutActive(false);
-  //     //   setWorkActive(true);
-  //     //   setContactActive(false);
-  //     // }
-  //     // if(contactSectionPosition === 0.0) {
-  //     //   setHomeActive(false);
-  //     //   setAboutActive(false);
-  //     //   setWorkActive(false);
-  //     //   setContactActive(true);
-  //     // }
-
-  //     // console.log("HomeSectionPosition: " + Math.floor(Math.abs(aboutSection)));
-  //     // console.log("ScrollPosition: " + scrollPosition);
-  //   }
-
-  //   window.addEventListener("scroll", onScroll);
-  //   return () => window.removeEventListener("scroll", onScroll);
-  // }, [scrollPosition]);
 
   const changeToggleStatus = () => {
     setIsToggleActive((status) => !status);
@@ -110,7 +45,6 @@ const NavbarContainer = (props) => {
     dispatch(navActions.linkContact());
   };
 
-  
   const homeNavLinkClasses = linksState.home
     ? `${classes.links} ${classes.active}`
     : classes.links;
