@@ -1,34 +1,33 @@
-import React, { useState, useEffect, useRef } from "react";
-
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Navbar, Container, Nav, Form } from "react-bootstrap";
+
+import { navActions } from "../../../store/nav";
 
 import classes from "./NavbarContainer.module.css";
 
 import mainLogo from "../../../assets/main-logo.png";
 import hoverLogo from "../../../assets/empty-logo.png";
 import MyButton from "../UI/MyButton";
-import { findAllByDisplayValue } from "@testing-library/react";
 
 const NavbarContainer = (props) => {
+  const dispatch = useDispatch();
+  const linksState = useSelector((state) => state.nav );
+
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isLogoHovered, setIsLogoHovered] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  // const [scrollPosition, setScrollPosition] = useState(0);
 
-  const [homeActive, setHomeActive] = useState(true);
-  const [aboutActive, setAboutActive] = useState(false);
-  const [workActive, setWorkActive] = useState(false);
-  const [contactActive, setContactActive] = useState(false);
+  // const listInnerRef = useRef();
 
-  const listInnerRef = useRef();
-
-  const onScroll = () => {
-    if (listInnerRef.current) {
-      const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
-      if (scrollTop + clientHeight === scrollHeight) {
-        console.log("reached bottom");
-      }
-    }
-  };
+  // const onScroll = () => {
+  //   if (listInnerRef.current) {
+  //     const { scrollTop, scrollHeight, clientHeight } = listInnerRef.current;
+  //     if (scrollTop + clientHeight === scrollHeight) {
+  //       console.log("reached bottom");
+  //     }
+  //   }
+  // };
 
   // useEffect(() => {
   //   function onScroll() {
@@ -95,18 +94,36 @@ const NavbarContainer = (props) => {
     setIsLogoHovered(false);
   };
 
-  const setFocus = () => {};
+  const linkHomeHandler = () => {
+    dispatch(navActions.linkHome());
+  };
 
-  const homeNavLinkClasses = homeActive
+  const linkAboutHandler = () => {
+    dispatch(navActions.linkAbout());
+  };
+
+  const linkWorkHandler = () => {
+    dispatch(navActions.linkWork());
+  };
+
+  const linkContactHandler = () => {
+    dispatch(navActions.linkContact());
+  };
+
+  
+  const homeNavLinkClasses = linksState.home
     ? `${classes.links} ${classes.active}`
     : classes.links;
-  const aboutNavLinkClasses = aboutActive
+
+  const aboutNavLinkClasses = linksState.about
     ? `${classes.links} ${classes.active}`
     : classes.links;
-  const workNavLinkClasses = workActive
+
+  const workNavLinkClasses = linksState.work
     ? `${classes.links} ${classes.active}`
     : classes.links;
-  const contactNavLinkClasses = contactActive
+
+  const contactNavLinkClasses = linksState.contact
     ? `${classes.links} ${classes.active}`
     : classes.links;
 
@@ -143,23 +160,33 @@ const NavbarContainer = (props) => {
           </div>
         </Navbar.Toggle>
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="ms-auto my-2 my-lg-0" style={{ maxHeight: "100px" }}>
-            <Nav.Link className={homeNavLinkClasses} href="#topOfPage">
+          <Nav className="ms-auto my-2 my-lg-0">
+            <Nav.Link
+              className={homeNavLinkClasses}
+              href="#home"
+              onClick={linkHomeHandler}
+            >
               Home
             </Nav.Link>
             <Nav.Link
               className={aboutNavLinkClasses}
-              href="#aboutSection"
-              onClick={setFocus}
-              onScroll={onScroll}
-              ref={listInnerRef}
+              href="#about"
+              onClick={linkAboutHandler}
             >
               About
             </Nav.Link>
-            <Nav.Link className={workNavLinkClasses} href="#workSection">
+            <Nav.Link
+              className={workNavLinkClasses}
+              href="#work"
+              onClick={linkWorkHandler}
+            >
               Work
             </Nav.Link>
-            <Nav.Link className={contactNavLinkClasses} href="#contactSection">
+            <Nav.Link
+              className={contactNavLinkClasses}
+              href="#contact"
+              onClick={linkContactHandler}
+            >
               Contact
             </Nav.Link>
           </Nav>

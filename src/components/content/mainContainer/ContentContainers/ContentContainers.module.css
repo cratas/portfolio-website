@@ -47,9 +47,10 @@ h3 {
 }
 
 p {
+  text-align: left;
   color: var(--color-white-dark);
   font-size: min(3vw, 1rem);
-  max-width: 40rem;
+  max-width: 60%;
 }
 
 h5 {
@@ -67,6 +68,9 @@ h5 {
 @media screen and (max-width: 768px) {
   .contentWrapper {
     padding: 1.1rem;
+  }
+  p {
+    max-width: 80%;
   }
 }
 

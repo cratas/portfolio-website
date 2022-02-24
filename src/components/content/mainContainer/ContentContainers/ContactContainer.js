@@ -4,7 +4,7 @@ import classes from "./ContentContainers.module.css";
 
 const ContactContainer = () => {
   return (
-    <section className={classes.contentWrapper} id="contactSection">
+    <section className={classes.contentWrapper} id="contact">
       <div data-aos="fade-up" className={classes.titleWrapper}>
         <h2>Contact me.</h2>
       </div>

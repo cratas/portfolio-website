@@ -1,10 +1,22 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+
 import classes from "./ContentContainers.module.css";
 import MyButton from "../../UI/MyButton";
 
+import { navActions } from "../../../../store/nav";
+
+
 const HomeContainer = () => {
+  const dispatch = useDispatch();
+  // const 
+
+  const linkAboutHandler = () => {
+    dispatch(navActions.linkAbout());
+  };
+
   return (
-    <section className={classes.contentWrapper} style={{marginTop: "4rem"}} id="homeSection">
+    <section className={classes.contentWrapper} style={{marginTop: "4rem"}} id="home">
       <div className={classes.alignWrapper}>
         <h5 data-aos="fade-up" id="top">
           Hey! I am
@@ -30,7 +42,7 @@ const HomeContainer = () => {
           data-aos-delay="1200"
           style={{ marginTop: "3rem" }}
         >
-          <MyButton href="#aboutSection">More about me</MyButton>
+          <MyButton href="#about" onClick={ linkAboutHandler }>More about me</MyButton>
         </div>
       </div>
     </section>
