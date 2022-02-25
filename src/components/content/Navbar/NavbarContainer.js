@@ -69,10 +69,12 @@ const NavbarContainer = (props) => {
     ? `${classes.toggleIconLine} ${classes.rotateRight}`
     : classes.toggleIconLine;
 
+  
+
   return (
     <Navbar sticky="top" expand="lg" className={classes.navbarContainer}>
       <Container fluid>
-        <Navbar.Brand href="#topOfPage">
+        <Navbar.Brand href="#home">
           <div className={classes.imageContainer}>
             <img
               src={!isLogoHovered ? mainLogo : hoverLogo}
@@ -124,7 +126,7 @@ const NavbarContainer = (props) => {
               Contact
             </Nav.Link>
           </Nav>
-          <Form className="d-flex flex-row-reverse bd-highlight">
+          <Form className="d-flex flex-row-reverse justify-content-center bd-highlight">
             <MyButton customStyle={classes.navbarButtonAnimartion}>
               Resume
             </MyButton>

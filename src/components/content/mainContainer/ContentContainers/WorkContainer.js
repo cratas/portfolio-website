@@ -4,10 +4,11 @@ import classes from "./ContentContainers.module.css";
 
 const WorkContainer = () => {
   return (
-    <section className={classes.contentWrapper} id="work">
+    <section className={`${classes.contentWrapper} ${classes.workWrapper}`} id="work">
       <div data-aos="fade-up" className={classes.titleWrapper}>
         <h2>Some of my work.</h2>
       </div>
+
     </section>
   );
 };

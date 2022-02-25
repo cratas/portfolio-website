@@ -6,7 +6,6 @@ import MyButton from "../../UI/MyButton";
 
 import { navActions } from "../../../../store/nav";
 
-
 const HomeContainer = () => {
   const dispatch = useDispatch();
 
@@ -15,12 +14,19 @@ const HomeContainer = () => {
   };
 
   return (
-    <section className={classes.contentWrapper} style={{marginTop: "4rem"}} id="home">
+    <section
+      className={classes.contentWrapper}
+      style={{ marginTop: "4rem" }}
+    >
       <div className={classes.alignWrapper}>
-        <h5 data-aos="fade-up" id="top">
+        <h5 data-aos="fade-up" >
           Hey! I am
         </h5>
-        <h1 data-aos="fade-up" data-aos-delay="300" style={{ marginTop: "1rem" }}>
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="300"
+          style={{ marginTop: "1rem" }}
+        >
           Petr Kratochvíl.
         </h1>
         <h3 data-aos="fade-up" data-aos-delay="600">
@@ -31,9 +37,10 @@ const HomeContainer = () => {
           data-aos-delay="900"
           style={{ marginTop: "2rem" }}
         >
-          I'am a guy who likes to do creative things, especially programming.
-          I'am a guy who likes to do creative things, especially programming.
-          I'am a guy who likes to do creative things, especially programming.
+          I'am a guy who really likes to do creative things. My favourites 
+          are design and build something what is blabla. I also like to
+          think a lot about things, so logical side of application called
+          backend isn't bogy for me either.
         </p>
 
         <div
@@ -41,7 +48,9 @@ const HomeContainer = () => {
           data-aos-delay="1200"
           style={{ marginTop: "3rem" }}
         >
-          <MyButton href="#about" onClick={ linkAboutHandler }>More about me</MyButton>
+          <MyButton href="#about" onClick={linkAboutHandler}>
+            More about me
+          </MyButton>
         </div>
       </div>
     </section>
