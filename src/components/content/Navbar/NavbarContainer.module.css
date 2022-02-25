@@ -6,6 +6,7 @@
   backdrop-filter: blur(10px);
 }
 
+
 .navbarContainer::after {
   content: "";
   position: absolute;
@@ -22,8 +23,6 @@
 .navbarButtonAnimartion {
   animation: navbar-animation-6 1s;
 }
-
-
 
 .imageContainer {
   bottom: 0;

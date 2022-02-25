@@ -16,7 +16,7 @@ const HomeContainer = () => {
   };
 
   return (
-    <section className={`${commonClasses.contentWrapper} ${classes.homeWrapper}`} style={{ marginTop: "1vw" }} >
+    <section className={`${commonClasses.contentWrapper} ${classes.homeWrapper}`} >
         <h5 data-aos="fade-up" >Hey! I am</h5>
         <div><h1
           data-aos="fade-up"

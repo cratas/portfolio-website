@@ -1,5 +1,4 @@
 .homeWrapper {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,17 +31,8 @@ h5 {
   margin-left: 2px; /*because of how hhuman eye perceives colours */
 }
 
-@media screen and (max-width: 991px) {
-  .contentWrapper {
-    padding: 1.7rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .contentWrapper {
-    padding: 1.1rem;
-  }
-  p {
+  .homeWrapper p {
     max-width: 80%;
   }
 }
@@ -52,15 +42,15 @@ h5 {
     font-size: 1.8rem;
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
-  .titleWrapper {
-    padding-left: 0.5rem;
+  h5 {
+    font-size: 1rem;
   }
-  .contentWrapper {
-    padding: 0.7rem;
+  .homeWrapper {
+    gap: 2vh;
   }
-  p {
+  .homeWrapper p {
     width: 80%;
   }
 }
