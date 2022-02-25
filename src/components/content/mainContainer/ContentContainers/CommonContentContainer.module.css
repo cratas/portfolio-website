@@ -1,0 +1,35 @@
+.contentWrapper {
+    width: 100%;
+    padding: 2.5rem;
+    font-family: var(--font-family);
+    scroll-margin-top: 100px;
+    min-height: 80vh;
+    max-height: 100%;
+  }
+
+  footer {
+    font-family: var(--font-family);
+    padding: 1.5rem 0 1.5rem;
+    text-align: right;
+    color: var(--color-white-dark);
+    text-align: center;
+  }
+
+  .titleWrapper {
+    border-left: 2px solid var(--color-white-dark);
+    padding-left: 1.5rem;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .titleWrapper h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--color-white);
+  }
+
+  .iconsContainer {
+    visibility: hidden;
+    margin-bottom: 0.5rem;
+  }
+

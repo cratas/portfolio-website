@@ -1,18 +1,18 @@
 import React from "react";
 import Icon from "../../UI/Icon";
 
-import classes from "./ContentContainers.module.css";
+import commonClasses from "./CommonContentContainer.module.css";
 
 const FooterContainer = () => {
 
   return (
     <footer>
 
-      <div className={classes.iconsContainer}>
+      <div className={commonClasses.iconsContainer}>
         <Icon iconType="GIT" style={{marginRight: '1rem'}} />
         <Icon iconType="LINKEDIN" />
       </div>
-      <div className={classes.footerText}>
+      <div className={commonClasses.footerText}>
         Designed & implemented by Petr Kratochvíl
       </div>
     </footer>

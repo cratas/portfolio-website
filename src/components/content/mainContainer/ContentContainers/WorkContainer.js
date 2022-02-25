@@ -1,11 +1,12 @@
 import React from "react";
 
-import classes from "./ContentContainers.module.css";
+import commonClasses from "./CommonContentContainer.module.css";
+import classes from "./WorkContainer.module.css";
 
 const WorkContainer = () => {
   return (
-    <section className={`${classes.contentWrapper} ${classes.workWrapper}`} id="work">
-      <div data-aos="fade-up" className={classes.titleWrapper}>
+    <section className={commonClasses.contentWrapper} id="work">
+      <div data-aos="fade-up" className={commonClasses.titleWrapper}>
         <h2>Some of my work.</h2>
       </div>
 
