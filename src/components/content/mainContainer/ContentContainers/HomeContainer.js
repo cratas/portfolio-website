@@ -20,16 +20,16 @@ const HomeContainer = () => {
         <h5 data-aos="fade-up" >Hey! I am</h5>
         <div><h1
           data-aos="fade-up"
-          data-aos-delay="300"
+          data-aos-delay="200"
         >
           Petr Kratochvíl.
         </h1>
-        <h3 data-aos="fade-up" data-aos-delay="600">
+        <h3 data-aos="fade-up" data-aos-delay="400">
           Czech Republic based Frontend Developer.
         </h3></div>
         <p
           data-aos="fade-up"
-          data-aos-delay="900"
+          data-aos-delay="600"
         >
           I'am a guy who really likes to do creative things. My favourites 
           are design and build something what is blabla. I also like to
@@ -39,7 +39,7 @@ const HomeContainer = () => {
 
         <div
           data-aos="fade-up"
-          data-aos-delay="1200"
+          data-aos-delay="800"
         >
           <MyButton href="#about" onClick={linkAboutHandler}>
             More about me

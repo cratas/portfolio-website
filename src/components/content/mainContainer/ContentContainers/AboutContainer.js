@@ -11,30 +11,30 @@ const AboutContainer = () => {
       </div>
 
       <div className={classes.aboutWrapper}>
-        <div className={classes.aboutLeft} data-aos="fade-up" data-aos-delay="300" >
-          <p>
+        <div className={classes.aboutLeft}  >
+          <p data-aos="fade-up" >
             My name is Petr Kratochvíl and I’am 21 y.o. developer currently
             focusing on building user interfaces. When I’ve discovered React.js,
             it has became my favourite tool.
           </p>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="100">
             I started coding on high school, where I started to study Computer
             science. After that I’ve decided to continue at VSB - Technical
             University of Ostrava, where I’am completing my Bachelor’s degree
             this year.
           </p>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="200">
             My name is Petr Kratochvíl and I’am 21 y.o. developer currently
             focusing on building user interfaces.
           </p>
-          <p>
+          <p data-aos="fade-up" data-aos-delay="300">
             I started coding on high school, where I started to study Computer
             science. After that I’ve decided to continue at VSB - Technical
             University of Ostrava, where I’am completing my Bachelor’s degree
             this year.
           </p>
         </div>
-        <div className={classes.aboutRight} data-aos="fade-up" data-aos-delay="600">
+        <div className={classes.aboutRight} data-aos="fade-up" data-aos-delay="200" >
           <div className={classes.imageWrapper}>
             <img src={profilePic} className={classes.profilePicture} alt="Me" sizes='500px'></img>
           </div>

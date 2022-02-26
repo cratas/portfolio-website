@@ -6,6 +6,9 @@
 .aboutLeft {
   width: 60%;
   padding-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .aboutRight {
@@ -54,7 +57,8 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-
-
+@media screen and (max-height: 800px) {
+  .aboutLeft {
+    gap: 0;
+  }
 }

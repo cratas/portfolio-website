@@ -54,3 +54,9 @@ h5 {
     width: 80%;
   }
 }
+
+@media screen and (max-height: 700px) {
+  .homeWrapper {
+    gap: 0.8rem;
+  }
+}
