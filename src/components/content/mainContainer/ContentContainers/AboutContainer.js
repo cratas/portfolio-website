@@ -17,24 +17,24 @@ const AboutContainer = () => {
             focusing on building user interfaces. When I’ve discovered React.js,
             it has became my favourite tool.
           </p>
-          <p data-aos="fade-up" data-aos-delay="100">
+          <p data-aos="fade-up">
             I started coding on high school, where I started to study Computer
             science. After that I’ve decided to continue at VSB - Technical
             University of Ostrava, where I’am completing my Bachelor’s degree
             this year.
           </p>
-          <p data-aos="fade-up" data-aos-delay="200">
+          <p data-aos="fade-up">
             My name is Petr Kratochvíl and I’am 21 y.o. developer currently
             focusing on building user interfaces.
           </p>
-          <p data-aos="fade-up" data-aos-delay="300">
+          <p data-aos="fade-up">
             I started coding on high school, where I started to study Computer
             science. After that I’ve decided to continue at VSB - Technical
             University of Ostrava, where I’am completing my Bachelor’s degree
             this year.
           </p>
         </div>
-        <div className={classes.aboutRight} data-aos="fade-up" data-aos-delay="200" >
+        <div className={classes.aboutRight} data-aos="fade-up">
           <div className={classes.imageWrapper}>
             <img src={profilePic} className={classes.profilePicture} alt="Me" sizes='500px'></img>
           </div>
