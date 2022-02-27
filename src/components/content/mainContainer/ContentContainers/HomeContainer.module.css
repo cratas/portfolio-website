@@ -13,20 +13,20 @@ h1 {
 }
 
 h3 {
-  color: var(--color-white-medium);
+  color: var(--color-blue);
   font-weight: bold;
   font-size: min(5vw, 3rem);
 }
 
 p {
   text-align: left;
-  color: var(--color-white-dark);
+  color: var(--color-white-medium);
   font-size: min(3vw, 1rem);
   max-width: 40rem;
 }
 
 h5 {
-  color: var(--color-blue);
+  color: var(--color-white-dark);
   font-weight: bold;
   margin-left: 2px; /*because of how hhuman eye perceives colours */
 }
@@ -42,7 +42,7 @@ h5 {
     font-size: 1.8rem;
   }
   h3 {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
   }
   h5 {
     font-size: 1rem;

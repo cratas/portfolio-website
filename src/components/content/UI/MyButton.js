@@ -5,7 +5,7 @@ import classes from "./UI.module.css";
 
 const MyButton = (props) => {
   return (
-    <Button variant="outline-success" className={`${classes.button} ${props.customStyle}`} href={props.href} onClick={props.onClick}>
+    <Button variant="outline-success" className={`${classes.button} ${props.customStyle}`} href={props.href} onClick={props.onClick} style={props.style}>
       {props.children}
     </Button>
   );

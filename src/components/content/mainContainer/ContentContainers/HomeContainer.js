@@ -25,7 +25,7 @@ const HomeContainer = () => {
           Petr Kratochvíl.
         </h1>
         <h3 data-aos="fade-up" data-aos-delay="400">
-          Czech Republic based Frontend Developer.
+          Creative Frontend Developer.
         </h3></div>
         <p
           data-aos="fade-up"
@@ -41,7 +41,7 @@ const HomeContainer = () => {
           data-aos="fade-up"
           data-aos-delay="800"
         >
-          <MyButton href="#about" onClick={linkAboutHandler}>
+          <MyButton href="#about" onClick={linkAboutHandler} style={{marginTop: '3vh'}}>
             More about me
           </MyButton>
         </div>
