@@ -26,10 +26,16 @@ p {
 }
 
 h5 {
-  color: var(--color-white-dark);
-  font-weight: bold;
+  color: var(--color-white);
   margin-left: 2px; /*because of how hhuman eye perceives colours */
 }
+
+.highlight {
+  color: var(--color-white);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 
 @media screen and (max-width: 768px) {
   .homeWrapper p {

@@ -16,10 +16,6 @@ footer {
 }
 
 .titleWrapper {
-  border-left: 2px solid var(--color-white-dark);
-  padding-left: 1.5rem;
-  /* display: table-cell; */
-  vertical-align: middle;
   margin-bottom: 5vh;
 }
 
@@ -27,6 +23,10 @@ footer {
   font-weight: bold;
   font-size: 30px;
   color: var(--color-white);
+}
+
+.titleWrapper h2::first-letter {
+  color: var(--color-blue);
 }
 
 .iconsContainer {
