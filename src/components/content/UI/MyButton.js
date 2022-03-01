@@ -5,12 +5,14 @@ import classes from "./UI.module.css";
 
 const MyButton = (props) => {
   const buttonStyle =
-    props.type === "filled"
+    props.buttonType === "filled"
       ? `${classes.button} ${classes.buttonFilled} ${props.customStyle}`
       : `${classes.button} ${classes.buttonBlank} ${props.customStyle}`;
 
+
   return (
     <Button
+      type={props.type}
       variant="outline-success"
       className={buttonStyle}
       href={props.href}
