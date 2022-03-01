@@ -29,9 +29,9 @@ const HomeContainer = () => {
       </div>
       <p data-aos="fade-up" data-aos-delay="600">
         I'm passionate about doing{" "}
-        <span className={classes.highlight}>creative things</span>. My favourite
-        one is <span className={classes.highlight}>programming</span>. When I've
-        discovered <span className={classes.highlight}>React</span>, it has
+        <span className={commonClasses.highlight}>creative things</span>. My favourite
+        one is <span className={commonClasses.highlight}>programming</span>. When I've
+        discovered <span className={commonClasses.highlight}>React</span>, it has
         immediately became my favourite tool. I also like things organized and
         simple.
       </p>

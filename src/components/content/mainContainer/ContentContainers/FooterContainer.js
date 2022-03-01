@@ -7,7 +7,6 @@ const FooterContainer = () => {
 
   return (
     <footer>
-
       <div className={commonClasses.iconsContainer}>
         <Icon iconType="GIT" style={{marginRight: '1rem'}} />
         <Icon iconType="LINKEDIN" />

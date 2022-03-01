@@ -18,7 +18,7 @@ h3 {
   font-size: min(5vw, 3rem);
 }
 
-p {
+.homeWrapper p {
   text-align: left;
   color: var(--color-white-medium);
   font-size: min(3vw, 1rem);
@@ -28,12 +28,6 @@ p {
 h5 {
   color: var(--color-white);
   margin-left: 2px; /*because of how hhuman eye perceives colours */
-}
-
-.highlight {
-  color: var(--color-white);
-  font-weight: bold;
-  letter-spacing: 1px;
 }
 
 
