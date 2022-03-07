@@ -1,7 +1,8 @@
 .button {
   border-radius: 0;
-  padding: 0.6rem 1.2rem;
+  padding: 0.55rem 1.2rem;
   border: 2px solid var(--color-blue);
+  border-radius: 8px;
 }
 
 .button:active,

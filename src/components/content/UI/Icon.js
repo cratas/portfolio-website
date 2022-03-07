@@ -1,5 +1,7 @@
-import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedin } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
+
+
 
 import classes from "./UI.module.css";
 
@@ -15,9 +17,9 @@ const Icon = (props) => {
   return (
     <>
       {props.iconType === "GIT" ? (
-        <AiFillGithub onClick={openGithub} className={classes.icon} style={props.style}/>
+        <FiGithub onClick={openGithub} className={classes.icon} style={props.style}/>
       ) : (
-        <FaLinkedin onClick={openLinkedin} className={classes.icon} />
+        <FaLinkedinIn onClick={openLinkedin} className={classes.icon} />
       )}
     </>
   );
