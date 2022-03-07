@@ -11,12 +11,10 @@ const WorkContainer = () => {
       <div data-aos="fade-up" className={commonClasses.titleWrapper}>
         <h2>{"> "}Some of my work.</h2>
       </div>
-
       <div className={classes.projectWrapper}>
         <div className={classes.textSite} data-aos="fade-right">
           <h5>Recent project</h5>
           <h2>OpenGl game engine</h2>
-
           <div className={classes.descriptionWrapper}>
             <p>
               OpenGl game engine written in C++. The project uses
@@ -24,16 +22,13 @@ const WorkContainer = () => {
               patterns
             </p>
           </div>
-
           <div className={classes.technologiesWrapper}>
             <div className={classes.technology}>C++</div>
             <div className={classes.technology}>OpenGL</div>
             <div className={classes.technology}>VS code</div>
             <div className={classes.technology}>OOP</div>
-
           </div>
         </div>
-
         <div className={classes.imageSite} data-aos="fade-up">
           <img
             src={scenePic}
@@ -43,7 +38,6 @@ const WorkContainer = () => {
           ></img>
         </div>
       </div>
-      
     </section>
   );
 };
