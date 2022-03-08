@@ -43,10 +43,10 @@ const WorkContainer = () => {
 
       <section className={commonClasses.contentWrapper} id="work">
         <div className={classes.projectWrapper}>
-          <div className={`${classes.textSite} ${classes.left}`}>
-            <h5 data-aos="fade-left">Recent project</h5>
-            <h2 data-aos="fade-left">OpenGl game engine</h2>
-            <div className={classes.descriptionWrapper} data-aos="fade-left">
+          <div className={`${classes.textSite} ${classes.left}`}  data-aos="fade-left">
+            <h5 >Recent project</h5>
+            <h2 >OpenGl game engine</h2>
+            <div className={classes.descriptionWrapper}>
               <p>
                 OpenGl game engine written in C++. The project uses
                 object-oriented programming together with the technique of
@@ -54,14 +54,14 @@ const WorkContainer = () => {
               </p>
             </div>
             <div
-              className={`${classes.technologiesWrapper} ${classes.technologiesRight}`} data-aos="fade-left"><div
-                className={`${classes.technology} ${classes.technologyRight}`}>C++</div>
+              className={`${classes.technologiesWrapper} ${classes.technologiesRight}`} ><div
+                className={`${classes.technology} ${classes.technologyLeft}`}>C++</div>
               <div
-                className={`${classes.technology} ${classes.technologyRight}`}>OpenGL</div>
+                className={`${classes.technology} ${classes.technologyLeft}`}>OpenGL</div>
               <div
-                className={`${classes.technology} ${classes.technologyRight}`}>VS code</div>
+                className={`${classes.technology} ${classes.technologyLeft}`}>VS code</div>
               <div
-                className={`${classes.technology} ${classes.technologyRight}`}>OOP</div>
+                className={`${classes.technology} ${classes.technologyLeft}`}>OOP</div>
             </div>
           </div>
           <div
@@ -69,7 +69,7 @@ const WorkContainer = () => {
             data-aos="fade-up"
           >
             <img
-              src={homeAutomationPic}
+              src={scenePic}
               className={classes.profilePicture}
               alt="Me"
               sizes="500px"

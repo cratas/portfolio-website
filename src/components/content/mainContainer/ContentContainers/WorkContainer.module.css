@@ -50,14 +50,14 @@
     color: var(--color-dark);
     font-weight: bold;
     padding: 0.2rem 1rem;   
-    margin-left: 2rem;
-    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.technologyRight {
-    margin: 1.5rem 2rem 0 0;
+.technologyLeft {
+    margin: 1rem 1.5rem 0 0;
 }
 
 .textSite h5 {
@@ -82,7 +82,7 @@
 }
 
 .imageSite img {
-    width: min(100%, 820px);
+    width: min(80%, 820px);
     cursor: pointer;
     filter: brightness(75%);
     border-radius: 10px;
