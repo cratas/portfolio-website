@@ -7,6 +7,7 @@ import classes from "./WorkContainer.module.css";
 
 import scenePic from "./../../../../assets/scene.jpg";
 import homeAutomationPic from "./../../../../assets/home-automation.jpg";
+import MyButton from "../../UI/MyButton";
 
 const WorkContainer = () => {
   return (
@@ -48,6 +49,8 @@ const WorkContainer = () => {
           }
           usedTechnologies={["React", "Redux", "Bootstrap", "OOP"]}
         />
+
+        <MyButton>More projects</MyButton>
       </section>
     </>
   );
