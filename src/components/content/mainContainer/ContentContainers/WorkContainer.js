@@ -26,9 +26,7 @@ const WorkContainer = () => {
           }
           usedTechnologies={["RPI", "Flask", "React", "Python", "SQLite"]}
         />
-      </section>
 
-      <section className={commonClasses.contentWrapper} id="work">
         <Project
           leftAlligned={true}
           image={scenePic}
@@ -38,6 +36,17 @@ const WorkContainer = () => {
             "OpenGl game engine written in C++. The project uses object-oriented programming together with the technique of design patterns ented programming together with the technique of design patterns ented programming together with the technique of design"
           }
           usedTechnologies={["C++", "OpenGL", "VS code", "OOP"]}
+        />
+
+        <Project
+          leftAlligned={false}
+          image={homeAutomationPic}
+          projectType={"Recent project"}
+          projectName={"Personal portfolio website"}
+          projectDescription={
+            "OpenGl game engine written in C++. The project uses object-oriented programming together with the technique of design patterns ented programming together with the technique of design patterns ented programming together with the technique of design"
+          }
+          usedTechnologies={["React", "Redux", "Bootstrap", "OOP"]}
         />
       </section>
     </>

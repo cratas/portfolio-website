@@ -9,7 +9,7 @@ const Project = (props) => {
     ? `${classes.technology} ${classes.technologyLeft}`
     : `${classes.technology}`;
 
-    const technologiesClass = props.leftAlligned
+  const technologiesClass = props.leftAlligned
     ? `${classes.technologiesWrapper} ${classes.technologiesLeft}`
     : `${classes.technologiesWrapper}`;
 
@@ -20,27 +20,28 @@ const Project = (props) => {
   const animation = props.leftAlligned ? "fade-left" : "fade-right";
 
   const technologies = props.usedTechnologies.map((technology) => (
-    <div className={technologyClasses} key={technology.toString()}>{technology}</div>
+    <div className={technologyClasses} key={technology.toString()}>
+      {technology}
+    </div>
   ));
 
   return (
     <div className={classes.projectWrapper} style={{ marginTop: "5rem" }}>
-      <div className={textClasses} data-aos={animation}>
-        <h5>{props.projectType}</h5>
-        <h2>{props.projectName}</h2>
-        <div className={classes.descriptionWrapper}>
-          <p>
-            {props.projectDescription}
-          </p>
+      <div className={classes.alignWrapper}>
+        <div className={textClasses} data-aos={animation}>
+          <h5>{props.projectType}</h5>
+          <h2>{props.projectName}</h2>
+          <div className={classes.descriptionWrapper}>
+            <p>{props.projectDescription}</p>
+          </div>
+          <div className={technologiesClass}>{technologies}</div>
         </div>
-        <div className={technologiesClass}>{technologies}</div>
-      </div>
-      <div className={imageClasses} data-aos="fade-up">
-        <img src={props.image} alt="Me" sizes="500px"></img>
+        <div className={imageClasses} data-aos="fade-up">
+          <img src={props.image} alt="Me" sizes="500px"></img>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Project;
-
