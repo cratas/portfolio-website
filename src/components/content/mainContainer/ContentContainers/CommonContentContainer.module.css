@@ -9,10 +9,10 @@
 
 footer {
   font-family: var(--font-family);
-  padding: 1.5rem 0 1.5rem;
-  text-align: right;
-  color: var(--color-white-dark);
+  padding: 1.5rem;
+  color: var(--color-white-medium);
   text-align: center;
+  font-size: min(3.5vw, 1rem);
 }
 
 .titleWrapper {

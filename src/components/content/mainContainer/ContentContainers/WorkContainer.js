@@ -1,18 +1,29 @@
-import React from "react";
-
+//import components
 import Project from "../../UI/Project";
+import MyButton from "../../UI/MyButton";
+//bootstrap components
 
+//import styles
 import commonClasses from "./CommonContentContainer.module.css";
 import classes from "./WorkContainer.module.css";
 
+// import images
 import scenePic from "./../../../../assets/scene.jpg";
 import homeAutomationPic from "./../../../../assets/home-automation.jpg";
-import MyButton from "../../UI/MyButton";
 
 const WorkContainer = () => {
+
+  const openGithub = () => {
+    window.open("https://github.com/cratas?tab=repositories", "_blank");
+  };
+
   return (
     <>
-      <section className={commonClasses.contentWrapper} id="work">
+      <section
+        className={commonClasses.contentWrapper}
+        style={{ minHeight: "0" }}
+        id="work"
+      >
         <div data-aos="fade-up" className={commonClasses.titleWrapper}>
           <h2>{"> "}Some of my work.</h2>
         </div>
@@ -25,7 +36,7 @@ const WorkContainer = () => {
           projectDescription={
             "OpenGl game engine written in C++. The project uses object-oriented programming together with the programming together with the technique of design"
           }
-          usedTechnologies={["RPI", "Flask", "React", "Python", "SQLite"]}
+          usedTechnologies={["RPI", "Django", "React", "SQLite"]}
         />
 
         <Project
@@ -50,7 +61,11 @@ const WorkContainer = () => {
           usedTechnologies={["React", "Redux", "Bootstrap", "OOP"]}
         />
 
-        <MyButton>More projects</MyButton>
+
+        <div className={classes.talkWrapper} data-aos="fade-up">
+          <MyButton onClick={openGithub} buttonType="fidlled">More of my work</MyButton>
+        </div>
+
       </section>
     </>
   );

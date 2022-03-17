@@ -77,7 +77,6 @@ const ContactContainer = () => {
       id="contact"
     >
       <div data-aos="fade-up" className={commonClasses.titleWrapper}>
-        {/* <h2>{"> "}Get in touch</h2> */}
         <h2>GET IN TOUCH</h2>
       </div>
 

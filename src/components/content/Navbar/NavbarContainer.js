@@ -72,8 +72,8 @@ const NavbarContainer = (props) => {
   
 
   return (
-    <Navbar sticky="top" expand="lg" className={classes.navbarContainer}>
-      <Container fluid>
+        <Navbar sticky="top" expand="lg" className={`${classes.navbarContainer} ${classes.navbarFixedWidth}`} >
+    <Container fluid>
         <Navbar.Brand href="#home">
           <div className={classes.imageContainer}>
             <img

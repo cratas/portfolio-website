@@ -1,4 +1,4 @@
-import classes from "./../mainContainer/ContentContainers/WorkContainer.module.css";
+import classes from "./../mainContainer/contentContainers/WorkContainer.module.css";
 
 const Project = (props) => {
   const textClasses = props.leftAlligned

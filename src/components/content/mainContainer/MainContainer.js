@@ -4,12 +4,12 @@ import ReactScrollDetect, { DetectSection } from "react-scroll-detect";
 
 import { Container } from "react-bootstrap";
 
-import NavbarContainer from "../Navbar/NavbarContainer";
-import AboutContainer from "./ContentContainers/AboutContainer";
-import ContactContainer from "./ContentContainers/ContactContainer";
-import HomeContainer from "./ContentContainers/HomeContainer";
-import WorkContainer from "./ContentContainers/WorkContainer";
-import FooterContainer from "./ContentContainers/FooterContainer";
+import NavbarContainer from "../navbar/NavbarContainer";
+import AboutContainer from "./contentContainers/AboutContainer";
+import ContactContainer from "./contentContainers/ContactContainer";
+import HomeContainer from "./contentContainers/HomeContainer";
+import WorkContainer from "./contentContainers/WorkContainer";
+import FooterContainer from "./contentContainers/FooterContainer";
 
 import { navActions } from "../../../store/nav";
 
