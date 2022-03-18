@@ -20,8 +20,6 @@ h3 {
 
 .homeWrapper p {
   text-align: left;
-  color: var(--color-white-medium);
-  font-size: min(3.5vw, 1rem);
   max-width: 40rem;
 }
 

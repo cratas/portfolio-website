@@ -10,10 +10,8 @@
 
 .contactWrapper p {
   text-align: center;
-  color: var(--color-white-medium);
   max-width: 55rem;
   margin-bottom: 3rem;
-  font-size: min(3.5vw, 1rem);
 }
 
 .contactForm {

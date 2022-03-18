@@ -40,6 +40,12 @@ footer {
   letter-spacing: 1px;
 }
 
+p {
+  color: var(--color-white);
+  display: inline;
+  font-size: min(3.5vw, 1rem);
+}
+
 @media screen and (max-width: 991px) {
   .contentWrapper {
     padding: 1.7rem;
@@ -50,6 +56,12 @@ footer {
   .contentWrapper {
     padding: 1.1rem;
   }
+}
+
+p {
+  color: var(--color-white-medium);
+  display: inline;
+  font-size: min(3.5vw, 1rem);
 }
 
 @media screen and (max-width: 480px) {

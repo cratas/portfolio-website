@@ -34,22 +34,8 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.descriptionWrapper p {
-  color: var(--color-white);
-  display: inline;
-  font-size: min(3.5vw, 1rem);
-}
 
-.technologiesWrapper {
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.technologiesLeft {
-  justify-content: flex-start;
-}
+/*  */
 
 .talkWrapper {
   margin: 5rem 0;
@@ -59,21 +45,6 @@
 .test {
   width: 100%;
   /* background-color: red; */
-}
-
-.technology {
-  background-color: var(--color-blue);
-  color: var(--color-dark);
-  font-weight: bold;
-  padding: 0.2rem 1rem;
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.technologyLeft {
-  margin: 1rem 1.5rem 0 0;
 }
 
 .textSite h5 {
@@ -128,15 +99,3 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-    .technologiesWrapper {
-        justify-content: space-around;
-      }
-    
-      .technology {
-        font-size: 0.9rem;
-        margin: 0;
-        margin-top: 1rem;
-        padding: 0.2rem 0.6rem;
-      }
-}
