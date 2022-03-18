@@ -37,7 +37,7 @@ const MainContainer = () => {
 
   return (
     <div className={classes.contentWrapper}>
-      <Container className={classes.container} id="home">
+      <Container id="home">
         <NavbarContainer />
         
         <ReactScrollDetect triggerPoint="center" onChange={setSection}>

@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navbar, Container, Nav, Form } from "react-bootstrap";
 
@@ -69,11 +69,13 @@ const NavbarContainer = (props) => {
     ? `${classes.toggleIconLine} ${classes.rotateRight}`
     : classes.toggleIconLine;
 
-  
-
   return (
-        <Navbar sticky="top" expand="lg" className={`${classes.navbarContainer} ${classes.navbarFixedWidth}`} >
-    <Container fluid>
+    <Navbar
+      sticky="top"
+      expand="lg"
+      className={`${classes.navbarContainer}`}
+    >
+      <Container className={classes.navbarWrapper}>
         <Navbar.Brand href="#home">
           <div className={classes.imageContainer}>
             <img

@@ -123,6 +123,9 @@
   .textSite {
     text-align: center;
   }
+  .textSite h2 {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {

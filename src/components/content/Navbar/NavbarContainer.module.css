@@ -20,6 +20,7 @@
   z-index: -1;
 }
 
+
 .navbarButtonAnimartion {
   animation: navbar-animation-6 1s;
 }
@@ -68,7 +69,6 @@
   border: none;
   padding: 0;
   animation: 1s navbar-animation-2;
-  margin-right: -8px;
 }
 
 .navbarToggle:focus {
@@ -111,17 +111,33 @@
   .navbarContainer {
     padding: 0.5rem 1rem;
   }
+  .navbarContainer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 1rem;
+    left: 0;
+  }
+  .navbarWrapper {
+    padding: 0 2.5rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .navbarContainer {
     padding: 0.5rem 0.5rem;
   }
+  .navbarWrapper {
+    padding: 0 1.9rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .navbarContainer {
     padding: 0.5rem 0rem;
+  }
+  .navbarWrapper {
+    padding: 0 1.6rem;
   }
 }
 
