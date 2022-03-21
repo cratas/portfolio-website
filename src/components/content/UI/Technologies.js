@@ -2,12 +2,9 @@ import classes from "./UI.module.css";
 
 const Technologies = (props) => {
 
-  const centered = props.centered && classes.technologiesCentered;
-
-
   let technologyClasses = props.leftAlligned
-    ? `${classes.technology} ${classes.technologyLeft}`
-    : `${classes.technology}`;
+    ? `shadow ${classes.technology} ${classes.technologyLeft}`
+    : `shadow ${classes.technology}`;
 
   let technologiesClass = props.leftAlligned
     ? `${classes.technologiesWrapper} ${classes.technologiesLeft}`

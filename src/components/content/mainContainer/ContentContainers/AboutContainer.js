@@ -15,7 +15,6 @@ const AboutContainer = () => {
 
       <div className={classes.aboutWrapper}>
         <div className={classes.aboutLeft}>
-          {/* <h5 style={{color: 'var(--color-blue)', fontWeight: 'bold'}}>In general</h5> */}
           <p data-aos="fade-up">
             My name is Petr Kratochvíl and I’am 21 y.o. developer currently
             focusing on building user interfaces. When I’ve discovered React.js,

@@ -6,8 +6,6 @@ const Project = (props) => {
     ? `${classes.textSite} ${classes.left}`
     : `${classes.textSite}`;
 
-
-
   const imageClasses = props.leftAlligned
     ? `${classes.imageSite} ${classes.imageSiteRight}`
     : `${classes.imageSite}`;
