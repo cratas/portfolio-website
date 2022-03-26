@@ -16,7 +16,7 @@ const AboutContainer = () => {
       <div className={classes.aboutWrapper}>
         <div className={classes.aboutLeft}>
           <p data-aos="fade-up">
-            My name is Petr Kratochvíl and I’am 21 y.o. developer currently
+            My name is Petr Kratochvíl and I’m 21 y.o. developer currently
             focusing on building user interfaces. When I’ve discovered React.js,
             it has became my favourite tool.
           </p>
@@ -24,11 +24,11 @@ const AboutContainer = () => {
           <p data-aos="fade-up">
             I started coding on high school, where I started to study Computer
             science. After that I’ve decided to continue at VSB - Technical
-            University of Ostrava, where I’am completing my Bachelor’s degree
+            University of Ostrava, where I’m completing my Bachelor’s degree
             this year.
           </p>
           <p data-aos="fade-up">
-            My name is Petr Kratochvíl and I’am 21 y.o. developer currently
+            My name is Petr Kratochvíl and I’m 21 y.o. developer currently
             focusing on building user interfaces.
           </p>
         </div>
