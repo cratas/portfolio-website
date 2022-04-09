@@ -1,8 +1,6 @@
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa";
 
-
-
 import classes from "./UI.module.css";
 
 const Icon = (props) => {
@@ -17,7 +15,11 @@ const Icon = (props) => {
   return (
     <>
       {props.iconType === "GIT" ? (
-        <FiGithub onClick={openGithub} className={classes.icon} style={props.style}/>
+        <FiGithub
+          onClick={openGithub}
+          className={classes.icon}
+          style={props.style}
+        />
       ) : (
         <FaLinkedinIn onClick={openLinkedin} className={classes.icon} />
       )}
