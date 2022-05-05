@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import useInput from "../../../../hooks/use-input";
+import emailjs from "emailjs-com";
 
 import { Form } from "react-bootstrap";
 import MyButton from "../../UI/MyButton";
@@ -8,7 +9,8 @@ import commonClasses from "./CommonContentContainer.module.css";
 import classes from "./ContactContainer.module.css";
 
 const ContactContainer = () => {
-  const [isEmailSentMessageVisibile,setIsEmailSentMessageVisibile] = useState(false);
+  const [isEmailSentMessageVisibile, setIsEmailSentMessageVisibile] =
+    useState(false);
 
   const {
     value: name,
@@ -43,14 +45,11 @@ const ContactContainer = () => {
     formIsValid = true;
   }
 
-
   useEffect(() => {
-
     const timer = setTimeout(() => {
       setIsEmailSentMessageVisibile(false);
     }, 3000);
     return () => clearTimeout(timer);
-
   }, [isEmailSentMessageVisibile]);
 
   const handleFormSubmit = (event) => {
@@ -64,11 +63,26 @@ const ContactContainer = () => {
       return;
     }
 
-    setIsEmailSentMessageVisibile(true);
+    emailjs
+      .sendForm(
+        "service_q998k6p",
+        "template_gjr5vmk",
+        event.target,
+        "qajZ6u7otyXQamiGv"
+      )
+      .then(
+        (result) => {
+          setIsEmailSentMessageVisibile(true);
 
-    nameReset();
-    emailReset();
-    messageReset();
+          nameReset();
+          emailReset();
+          messageReset();
+        },
+        (error) => {
+          console.log(error.text);
+          return;
+        }
+      );
   };
 
   return (
@@ -89,7 +103,7 @@ const ContactContainer = () => {
         to
         <span className={commonClasses.highlight}> contact me</span>.<br />
         <span style={{ color: "var(--color-blue)" }}>
-          Or {" "}
+          Or{" "}
           <span
             style={{
               textDecoration: "underline",
@@ -104,11 +118,9 @@ const ContactContainer = () => {
       </p>
 
       <Form className={classes.contactForm} onSubmit={handleFormSubmit}>
-        <Form.Group
-          className="mb-3"
-          data-aos="fade-up"
-        >
+        <Form.Group className="mb-3" data-aos="fade-up">
           <Form.Control
+            name="name"
             value={name}
             placeholder="Name"
             className={classes.formInput}
@@ -123,11 +135,9 @@ const ContactContainer = () => {
           )}
         </Form.Group>
 
-        <Form.Group
-          className="mb-3"
-          data-aos="fade-up"
-        >
+        <Form.Group className="mb-3" data-aos="fade-up">
           <Form.Control
+            name="email"
             value={email}
             placeholder="Email"
             className={classes.formInput}
@@ -142,14 +152,12 @@ const ContactContainer = () => {
           )}
         </Form.Group>
 
-        <Form.Group
-          className="mb-3"
-          data-aos="fade-up"
-        >
+        <Form.Group className="mb-3" data-aos="fade-up">
           <Form.Control
             value={message}
             as="textarea"
             rows={4}
+            name="message"
             placeholder="Your message"
             className={classes.formInput}
             onChange={messageChanged}
@@ -171,13 +179,12 @@ const ContactContainer = () => {
           >
             Click to send
           </MyButton>
-
         </Form.Group>
         {isEmailSentMessageVisibile && (
-            <Form.Text className={`text-muted ${classes.emailSentMessage}`} >
-              Message successfully sent.
-            </Form.Text>
-          )}
+          <Form.Text className={`text-muted ${classes.emailSentMessage}`}>
+            Message successfully sent.
+          </Form.Text>
+        )}
       </Form>
     </section>
   );

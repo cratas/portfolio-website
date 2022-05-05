@@ -60,7 +60,9 @@
   animation: navbar-animation-5 1s;
 }
 
-.links:hover,
+.links:hover {
+  color: var(--color-white-medium) !important;
+}
 .links.active {
   color: var(--color-white) !important;
 }

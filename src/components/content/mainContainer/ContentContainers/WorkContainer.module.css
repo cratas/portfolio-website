@@ -41,7 +41,6 @@
 
 .test {
   width: 100%;
-  /* background-color: red; */
 }
 
 .textSite h5 {
@@ -67,19 +66,13 @@
 
 .imageSite img {
   width: min(80%, 820px);
-  cursor: pointer;
   filter: brightness(90%);
   border-radius: 20px;
 }
 
-/* .imageSite img:hover {
-  filter: brightness(80%);
-} */
-
 @media screen and (max-width: 1300px) {
   .imageSite {
     margin-top: 1rem;
-    /* text-align: center; */
   }
 
   .imageSite img {
@@ -95,4 +88,3 @@
     margin-bottom: 1rem;
   }
 }
-

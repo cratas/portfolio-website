@@ -26,7 +26,7 @@ const WorkContainer = () => {
         id="work"
       >
         <div data-aos="fade-up" className={commonClasses.titleWrapper}>
-          <h2>{"> "}Some of my work.</h2>
+          <h2>{"> "}Some of my work</h2>
         </div>
 
         <Project

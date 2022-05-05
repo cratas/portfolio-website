@@ -36,7 +36,7 @@ const AboutContainer = () => {
             <Row data-aos="fade-up">
               <Col>
                 <ul>
-                  <li>JavaScript ES6+</li>
+                  <li>JS ES6+</li>
                   <li>HTML</li>
                   <li>CSS</li>
                 </ul>

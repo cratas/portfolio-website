@@ -70,11 +70,7 @@ const NavbarContainer = (props) => {
     : classes.toggleIconLine;
 
   return (
-    <Navbar
-      sticky="top"
-      expand="lg"
-      className={`${classes.navbarContainer}`}
-    >
+    <Navbar sticky="top" expand="lg" className={`${classes.navbarContainer}`}>
       <Container className={classes.navbarWrapper}>
         <Navbar.Brand href="#home">
           <div className={classes.imageContainer}>
@@ -129,7 +125,7 @@ const NavbarContainer = (props) => {
             </Nav.Link>
           </Nav>
           <Form className="d-flex flex-row-reverse justify-content-center bd-highlight">
-            <MyButton customStyle={classes.navbarButtonAnimartion}>
+            <MyButton customStyle={classes.navbarButtonAnimartion} href="https://github.com/cratas/cratas/files/8629683/Kratochvil-Petr-CV.pdf">
               Resume
             </MyButton>
           </Form>
