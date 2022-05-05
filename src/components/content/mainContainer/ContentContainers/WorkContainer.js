@@ -37,7 +37,7 @@ const WorkContainer = () => {
           projectDescription={
             "Agricultural services website implemented in React. The project focuses on the design and clarity of the user interface."
           }
-          usedTechnologies={["React", "Material UI", "React router" ]}
+          usedTechnologies={["React", "MUI", "React router" ]}
         />
 
         <Project

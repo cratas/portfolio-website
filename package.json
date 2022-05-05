@@ -1,6 +1,10 @@
 {
   "name": "portfolio-website",
   "version": "0.1.0",
+  "engines": {
+    "npm": "8.1.2",
+    "node": "16.13.1"
+  },
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.2",
