@@ -4,7 +4,7 @@ import ReactScrollDetect, { DetectSection } from "react-scroll-detect";
 
 import { Container } from "react-bootstrap";
 
-import NavbarContainer from "./navbar/NavbarContainer";
+import NavbarContainer from '../navbar/NavbarContainer';
 import AboutContainer from "./contentContainers/AboutContainer";
 import ContactContainer from "./contentContainers/ContactContainer";
 import HomeContainer from "./contentContainers/HomeContainer";

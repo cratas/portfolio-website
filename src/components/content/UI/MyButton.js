@@ -18,6 +18,8 @@ const MyButton = (props) => {
       href={props.href}
       onClick={props.onClick}
       style={props.style}
+      target={props.target} 
+      rel={props.rel}
     >
       {props.children}
     </Button>

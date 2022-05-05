@@ -8,6 +8,7 @@ import classes from "./NavbarContainer.module.css";
 
 import mainLogo from "../../../assets/main-logo.png";
 import hoverLogo from "../../../assets/empty-logo.png";
+import resume from "../../../assets/resume.pdf";
 import MyButton from "../UI/MyButton";
 
 const NavbarContainer = (props) => {
@@ -125,7 +126,12 @@ const NavbarContainer = (props) => {
             </Nav.Link>
           </Nav>
           <Form className="d-flex flex-row-reverse justify-content-center bd-highlight">
-            <MyButton customStyle={classes.navbarButtonAnimartion} href="https://github.com/cratas/cratas/files/8629683/Kratochvil-Petr-CV.pdf">
+            <MyButton
+              customStyle={classes.navbarButtonAnimartion}
+              href={resume}
+              target='_blank'
+              rel="noreferrer"
+            >
               Resume
             </MyButton>
           </Form>
