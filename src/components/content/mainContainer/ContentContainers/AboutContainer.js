@@ -2,7 +2,7 @@ import commonClasses from "./CommonContentContainer.module.css";
 import classes from "./AboutContainer.module.css";
 import { Row, Col } from "react-bootstrap";
 
-import profilePic from "../../../../assets/profile-pic.jpg";
+import profilePic from "../../../../assets/profile-image.png";
 
 const AboutContainer = () => {
 

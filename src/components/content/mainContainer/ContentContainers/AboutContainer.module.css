@@ -31,10 +31,16 @@
 .aboutRight img {
   height: 100%;
   width: 100%;
-  max-width: 300px;
+  max-width: 330px;
   margin-left: -10px;
   margin-bottom: -10px;
   padding-top: 10px;
+  filter: grayscale(85%);
+  cursor: pointer;
+}
+
+.aboutRight img:hover {
+  filter: grayscale(0%);
 }
 
 .imageWrapper:hover {
