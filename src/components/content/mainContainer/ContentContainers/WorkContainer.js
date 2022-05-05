@@ -46,7 +46,7 @@ const WorkContainer = () => {
           projectType={"Recent project"}
           projectName={"Home automation using RPi"}
           projectDescription={
-            "Home automation system using Raspberry Pi, which is able to communicate with sensors via HTTP protocol. The data are stored in a SQLite database on a RPi. Backend is implemented in Django framework and Frontend is implemented in React."
+            "Home automation system using Raspberry Pi, which is able to communicate with sensors via HTTP protocol. The data are stored in a SQLite database on a RPi. Backend is implemented in Django framework and Frontend in React."
           }
           usedTechnologies={["RPI", "Django", "React", "SQLite"]}
         />

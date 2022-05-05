@@ -1,11 +1,16 @@
 import commonClasses from "./CommonContentContainer.module.css";
 import classes from "./AboutContainer.module.css";
 import { Row, Col } from "react-bootstrap";
-import Technologies from "../../UI/Technologies";
 
 import profilePic from "../../../../assets/profile-pic.jpg";
 
 const AboutContainer = () => {
+
+  const handeTypingTest = () => {
+    window.open("https://monkeytype.com/", "_blank");
+
+  }
+
   return (
     <section className={commonClasses.contentWrapper} id="about">
       <div data-aos="fade-up" className={commonClasses.titleWrapper}>
@@ -15,20 +20,50 @@ const AboutContainer = () => {
       <div className={classes.aboutWrapper}>
         <div className={classes.aboutLeft}>
           <p data-aos="fade-up">
-            My name is Petr Kratochvíl and I’m 21 y.o. developer currently
-            focusing on building user interfaces. When I’ve discovered React.js,
-            it has became my favourite tool.
+            My name is Petr Kratochvíl, software developer currently focusing on
+            building{" "}
+            <span style={{ color: "#fff", fontWeight: "bold" }}>
+              things for web in React
+            </span>
+            . I also have experience with
+            <span style={{ color: "#fff", fontWeight: "bold" }}>
+              {" "}
+              Backend development
+            </span>
+            , especially in
+            <span style={{ color: "#fff", fontWeight: "bold" }}>
+              {" "}
+              Django
+            </span>{" "}
+            framework.
           </p>
 
           <p data-aos="fade-up">
-            I started coding on high school, where I started to study Computer
-            science. After that I’ve decided to continue at VSB - Technical
-            University of Ostrava, where I’m completing my Bachelor’s degree
-            this year.
+            My interest in coding started on high school, where I’ve started to
+            study{" "}
+            <span style={{ color: "#fff", fontWeight: "bold" }}>
+              Computer science
+            </span>
+            . Now I’m studying at{" "}
+            <span style={{ color: "#fff", fontWeight: "bold" }}>
+              VSB - Technical University of Ostrava
+            </span>
+            , where I’m completing my Bachelor’s degree this year.
           </p>
           <p data-aos="fade-up">
-            My name is Petr Kratochvíl and I’m 21 y.o. developer currently
-            focusing on building user interfaces.
+            In addition to web development, I have experience with{" "}
+            <span style={{ color: "#fff", fontWeight: "bold" }}>
+              algorithms
+            </span>
+            ,{" "}
+            <span style={{ color: "#fff", fontWeight: "bold" }}>databases</span>{" "}
+            and{" "}
+            <span style={{ color: "#fff", fontWeight: "bold" }}>
+              operating systems
+            </span>
+            . My average typing speed is around{" "}
+            <span style={{ color: "#fff", fontWeight: "bold" }}>120 wpm</span>,
+            try yours <span className={classes.typingSpeed} onClick={handeTypingTest}>here</span>.
           </p>
 
           <div className={classes.techStack}>

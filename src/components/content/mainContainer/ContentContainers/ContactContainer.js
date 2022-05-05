@@ -85,6 +85,10 @@ const ContactContainer = () => {
       );
   };
 
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("petr8kratochvil@seznam.cz");
+  }
+
   return (
     <section
       className={` ${commonClasses.contentWrapper} ${classes.contactWrapper}`}
@@ -109,7 +113,9 @@ const ContactContainer = () => {
               textDecoration: "underline",
               fontWeight: "bold",
               textUnderlineOffset: "5px",
+              cursor: "pointer"
             }}
+            onClick={handleCopyEmail}
           >
             copy
           </span>{" "}
