@@ -1,8 +1,7 @@
 import commonClasses from "./CommonContentContainer.module.css";
 import classes from "./AboutContainer.module.css";
-
+import { Row, Col } from "react-bootstrap";
 import Technologies from "../../UI/Technologies";
-
 
 import profilePic from "../../../../assets/profile-pic.jpg";
 
@@ -31,6 +30,33 @@ const AboutContainer = () => {
             My name is Petr Kratochvíl and I’m 21 y.o. developer currently
             focusing on building user interfaces.
           </p>
+
+          <div className={classes.techStack}>
+            <h4 data-aos="fade-up">{"> "}My tech stack</h4>
+            <Row data-aos="fade-up">
+              <Col>
+                <ul>
+                  <li>JavaScript ES6+</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </Col>
+              <Col>
+                <ul>
+                  <li>React</li>
+                  <li>Django</li>
+                  <li>Git</li>
+                </ul>
+              </Col>
+              <Col>
+                <ul>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>C/C++</li>
+                </ul>
+              </Col>
+            </Row>
+          </div>
         </div>
         <div className={classes.aboutRight} data-aos="fade-up">
           <div className={classes.imageWrapper}>
@@ -45,17 +71,12 @@ const AboutContainer = () => {
       </div>
 
       <div className={classes.techStack}>
-      <h4>My tech stack</h4>
-      <p data-aos="fade-up">
+        {/* <p data-aos="fade-up">
         My name is Petr Kratochvíl and I’am 21 y.o. developer currently focusing
         on building user interfaces.
-      </p>
-      <Technologies centered={true} usedTechnologies={["React", "ES6", "GIT", "Java","Python", "C/C++", "SQL", "OOP", "Design patterns", "VS code"]} leftAlligned={true}/>
-
+      </p> */}
+        {/* <Technologies centered={true} usedTechnologies={["React", "ES6", "GIT", "Java","Python", "C/C++", "SQL", "OOP", "Design patterns", "VS code"]} leftAlligned={true}/> */}
       </div>
-
-
-
     </section>
   );
 };

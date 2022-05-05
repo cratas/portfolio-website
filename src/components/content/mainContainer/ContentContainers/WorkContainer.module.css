@@ -29,13 +29,10 @@
 .descriptionWrapper {
   border: 2px solid white;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.068);
+  background-color: rgba(13, 13, 26, 0.6);
   backdrop-filter: blur(5px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-
-/*  */
 
 .talkWrapper {
   margin: 5rem 0;
@@ -71,13 +68,13 @@
 .imageSite img {
   width: min(80%, 820px);
   cursor: pointer;
-  filter: brightness(75%);
-  border-radius: 10px;
+  filter: brightness(90%);
+  border-radius: 20px;
 }
 
-.imageSite img:hover {
+/* .imageSite img:hover {
   filter: brightness(80%);
-}
+} */
 
 @media screen and (max-width: 1300px) {
   .imageSite {

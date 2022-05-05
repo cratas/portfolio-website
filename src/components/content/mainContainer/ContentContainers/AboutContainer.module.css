@@ -43,13 +43,38 @@
 }
 
 .techStack {
-  margin-top: 4rem;
-  text-align: center;
+  margin-top: 2rem;
+  text-align: left;
+  
+}
+
+.techStack h4::first-letter {
+  color: var(--color-blue);
 }
 
 .techStack h4 {
   color: var(--color-white);
   font-weight: bold;
+}
+
+ul {
+  list-style:     none;
+  margin:         0.75em 0;
+  padding:        0 1em;
+  color: var(--color-white-medium);
+}
+
+li:before {
+  content:        "";
+  border-color:   transparent var(--color-blue);
+  border-style:   solid;
+  border-width:   0.35em 0 0.35em 0.45em;
+  display:        block;
+  height:         0;
+  left:           -1em;
+  position:       relative;
+  top:            1.1em;
+  width:          0;
 }
 
 @media screen and (max-width: 991px) {
