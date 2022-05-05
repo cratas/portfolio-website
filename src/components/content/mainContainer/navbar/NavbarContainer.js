@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Navbar, Container, Nav, Form } from "react-bootstrap";
 
-import { navActions } from "../../../store/nav";
+import { navActions } from "../../../../store/nav";
 
 import classes from "./NavbarContainer.module.css";
 
-import mainLogo from "../../../assets/main-logo.png";
-import hoverLogo from "../../../assets/empty-logo.png";
-import MyButton from "../UI/MyButton";
+import mainLogo from "../../../../assets/main-logo.png";
+import hoverLogo from "../../../../assets/empty-logo.png";
+import MyButton from "../../UI/MyButton";
 
 const NavbarContainer = (props) => {
   const dispatch = useDispatch();
