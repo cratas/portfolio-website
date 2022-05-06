@@ -9,7 +9,7 @@ const Icon = (props) => {
   };
 
   const openLinkedin = () => {
-    window.open("https://www.linkedin.com/feed/", "_blank");
+    window.open("https://www.linkedin.com/in/petr-kratochv%C3%ADl-010794225/", "_blank");
   };
 
   return (
