@@ -21,13 +21,7 @@ const App = () => {
     };
   }, []);
 
-  return (
-    <>
-      {isLoaded && <Content />}
-      {!isLoaded && <Loader />}
-      {/* <Loader/> */}
-    </>
-  );
+  return isLoaded ? <Content /> : <Loader />;
 };
 
 export default App;

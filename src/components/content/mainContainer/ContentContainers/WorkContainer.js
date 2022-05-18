@@ -11,6 +11,7 @@ import classes from "./WorkContainer.module.css";
 import scenePic from "./../../../../assets/scene.jpg";
 import homeAutomationPic from "./../../../../assets/rooms.png";
 import AgriculturalPic from "./../../../../assets/agr-services.png";
+import portfolioPic from "./../../../../assets/portfolio.png";
 
 
 const WorkContainer = () => {
@@ -37,7 +38,7 @@ const WorkContainer = () => {
           projectDescription={
             "Agricultural services website implemented in React. The project focuses on the design and clarity of the user interface."
           }
-          usedTechnologies={["React", "MUI", "React router" ]}
+          usedTechnologies={["React", "MUI", "React router"]}
         />
 
         <Project
@@ -51,6 +52,18 @@ const WorkContainer = () => {
           usedTechnologies={["RPI", "Django", "React", "SQLite"]}
         />
 
+        {/* <Project
+          leftAlligned={false}
+          image={portfolioPic}
+          projectType={"RecentProject"}
+          projectName={"Portfolio website"}
+          projectDescription={
+            "OpenGl game engine written in C++. Part of the program is the main scene, in which it is possible to move using the camera. The project uses object-oriented programming together with the technique of design patterns. "
+          }
+          usedTechnologies={["C++", "OpenGL", "OOP"]}
+          border={true}
+        /> */}
+
         <Project
           leftAlligned={false}
           image={scenePic}
@@ -61,8 +74,6 @@ const WorkContainer = () => {
           }
           usedTechnologies={["C++", "OpenGL", "OOP"]}
         />
-
-
 
         <div className={classes.talkWrapper} data-aos="fade-up">
           <MyButton onClick={openGithub} buttonType="fidlled">

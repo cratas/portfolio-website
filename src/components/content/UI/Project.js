@@ -12,7 +12,7 @@ const Project = (props) => {
 
   const animation = props.leftAlligned ? "fade-left" : "fade-right";
 
-
+  const borderStyle = props.border && {border: "2px solid white"};
 
   return (
     <div className={classes.projectWrapper} style={{ marginTop: "5rem" }}>
@@ -26,7 +26,7 @@ const Project = (props) => {
           <Technologies usedTechnologies={props.usedTechnologies} leftAlligned={props.leftAlligned}/>
         </div>
         <div className={imageClasses} data-aos="fade-up">
-          <img src={props.image} alt="Me" sizes="500px"></img>
+          <img src={props.image} alt="Me" sizes="500px" style={borderStyle}></img>
         </div>
       </div>
     </div>
