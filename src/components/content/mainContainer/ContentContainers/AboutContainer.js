@@ -48,7 +48,7 @@ const AboutContainer = () => {
             <span style={{ color: "#fff", fontWeight: "bold" }}>
               VSB - Technical University of Ostrava
             </span>
-            , where I’m completing my Bachelor’s degree this year.
+            , where I’ve completed my Bachelor’s degree this year.
           </p>
           <p data-aos="fade-up">
             In addition to web development, I have experience with{" "}
