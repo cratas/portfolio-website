@@ -11,8 +11,8 @@ import classes from "./WorkContainer.module.css";
 import scenePic from "./../../../../assets/scene.jpg";
 import homeAutomationPic from "./../../../../assets/rooms.png";
 import AgriculturalPic from "./../../../../assets/agr-services.png";
-import portfolioPic from "./../../../../assets/portfolio.png";
-
+import RedditClonePic from "../../../../assets/reddit-clone.png";
+import chuckNorrisAPI from "../../../../assets/chuck-jokes-generator.png";
 
 const WorkContainer = () => {
   const openGithub = () => {
@@ -31,17 +31,6 @@ const WorkContainer = () => {
         </div>
 
         <Project
-          leftAlligned={false}
-          image={AgriculturalPic}
-          projectType={"Current project"}
-          projectName={"Agricultural services website"}
-          projectDescription={
-            "Agricultural services website implemented in React. The project focuses on the design and clarity of the user interface."
-          }
-          usedTechnologies={["React", "MUI", "React router"]}
-        />
-
-        <Project
           leftAlligned={true}
           image={homeAutomationPic}
           projectType={"Recent project"}
@@ -52,27 +41,48 @@ const WorkContainer = () => {
           usedTechnologies={["RPI", "Django", "React", "SQLite"]}
         />
 
-        {/* <Project
+        <Project
           leftAlligned={false}
-          image={portfolioPic}
-          projectType={"RecentProject"}
-          projectName={"Portfolio website"}
+          image={AgriculturalPic}
+          projectType={"Recent project"}
+          projectName={"Agricultural services website"}
           projectDescription={
-            "OpenGl game engine written in C++. Part of the program is the main scene, in which it is possible to move using the camera. The project uses object-oriented programming together with the technique of design patterns. "
+            "Simple agricultural services website implemented in React. The project focuses on the design and clarity of the user interface."
           }
-          usedTechnologies={["C++", "OpenGL", "OOP"]}
-          border={true}
-        /> */}
+          usedTechnologies={["React", "Bootstrap", "React router"]}
+        />
+
+        <Project
+          leftAlligned={true}
+          image={RedditClonePic}
+          projectType={"Current project"}
+          projectName={"Reddit clone"}
+          projectDescription={
+            "Reddit social media platform implemented in React.js and Node.js (TypeScript) using PostgreSQL database and GraphQL APIs. On this project I'm trying to gain some fullstack development experience."
+          }
+          usedTechnologies={["TypeScript", "React", "Node", "GraphQL"]}
+        />
 
         <Project
           leftAlligned={false}
           image={scenePic}
-          projectType={"RecentProject"}
+          projectType={"Recent Project"}
           projectName={"OpenGL game engine"}
           projectDescription={
             "OpenGl game engine written in C++. Part of the program is the main scene, in which it is possible to move using the camera. The project uses object-oriented programming together with the technique of design patterns. "
           }
           usedTechnologies={["C++", "OpenGL", "OOP"]}
+        />
+
+        <Project
+          leftAlligned={true}
+          image={chuckNorrisAPI}
+          projectType={"Recent Project"}
+          projectName={"Chuck Norris jokes generator"}
+          projectDescription={
+            "Simple web application generating joke about Chuck Norris according to user preferences. Application use Chuck Norris Jokes API, Redux with Redux-Saga and Material UI.  "
+          }
+          usedTechnologies={["React", "Redux", "Material UI"]}
         />
 
         <div className={classes.talkWrapper} data-aos="fade-up">

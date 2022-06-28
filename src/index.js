@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import store from './store/index';
 
-import App from "./App";
+import App from "./App.tsx";
 
 reactDom.render(
   <Provider store={store}>

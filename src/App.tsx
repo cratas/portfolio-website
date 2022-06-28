@@ -4,10 +4,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import Content from "./components/content/Content";
-import Loader from "./components/loader/Loader";
+import Loader from "./components/loader/Loader.tsx";
 
-const App = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
+const App: React.FC<{}> = () => {
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   useEffect(() => {
     Aos.init({ duration: 900 });

@@ -72,8 +72,8 @@ const AboutContainer = () => {
               <Col>
                 <ul>
                   <li>JS ES6+</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
+                  <li>TypeScript</li>
+                  <li>HTML/CSS</li>
                 </ul>
               </Col>
               <Col>
