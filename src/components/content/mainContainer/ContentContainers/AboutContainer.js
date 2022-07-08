@@ -5,11 +5,9 @@ import { Row, Col } from "react-bootstrap";
 import profilePic from "../../../../assets/profile-image.png";
 
 const AboutContainer = () => {
-
   const handeTypingTest = () => {
     window.open("https://monkeytype.com/", "_blank");
-
-  }
+  };
 
   return (
     <section className={commonClasses.contentWrapper} id="about">
@@ -63,7 +61,11 @@ const AboutContainer = () => {
             </span>
             . My average typing speed is around{" "}
             <span style={{ color: "#fff", fontWeight: "bold" }}>120 wpm</span>,
-            try yours <span className={classes.typingSpeed} onClick={handeTypingTest}>here</span>.
+            try yours{" "}
+            <span className={classes.typingSpeed} onClick={handeTypingTest}>
+              here
+            </span>
+            .
           </p>
 
           <div className={classes.techStack}>
@@ -72,19 +74,14 @@ const AboutContainer = () => {
               <Col>
                 <ul>
                   <li>JS ES6+</li>
-                  <li>TypeScript</li>
                   <li>HTML/CSS</li>
-                </ul>
-              </Col>
-              <Col>
-                <ul>
                   <li>React</li>
                   <li>Django</li>
-                  <li>Git</li>
                 </ul>
               </Col>
               <Col>
                 <ul>
+                  <li>Git</li>
                   <li>Java</li>
                   <li>Python</li>
                   <li>C/C++</li>
