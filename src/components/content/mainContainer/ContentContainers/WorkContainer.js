@@ -56,11 +56,11 @@ const WorkContainer = () => {
           leftAlligned={true}
           image={RedditClonePic}
           projectType={"Current project"}
-          projectName={"Reddit clone"}
+          projectName={"SolarTech Energy website"}
           projectDescription={
-            "Reddit social media platform implemented in React.js and Node.js (TypeScript) using PostgreSQL database and GraphQL APIs. On this project I'm trying to gain some fullstack development experience."
+            "Website about SolarTech Energy Company which provides photovoltaic power plant solutions. The project focuses on the design and clarity of the user interface."
           }
-          usedTechnologies={["TypeScript", "React", "Node", "GraphQL"]}
+          usedTechnologies={["React", "Material UI", "React router"]}
         />
 
         <Project
