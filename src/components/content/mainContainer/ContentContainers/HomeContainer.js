@@ -17,7 +17,8 @@ const HomeContainer = () => {
 
   return (
     <section
-      className={`${commonClasses.contentWrapper} ${classes.homeWrapper} mt-5` }>
+      className={`${commonClasses.contentWrapper} ${classes.homeWrapper} mt-5`}
+    >
       <h5 data-aos="fade-up">Hi there! I'm </h5>
       <div>
         <h1 data-aos="fade-up" data-aos-delay="200">
@@ -29,11 +30,12 @@ const HomeContainer = () => {
       </div>
       <p data-aos="fade-up" data-aos-delay="600">
         I'm passionate about doing{" "}
-        <span className={commonClasses.highlight}>creative things</span>. My favourite
-        one is <span className={commonClasses.highlight}>programming</span>. When I've
-        discovered <span className={commonClasses.highlight}>React</span>, it has
-        immediately become my favourite tool. I also like things organized and
-        simple.
+        <span className={commonClasses.highlight}>creative things</span>. My
+        favourite one is{" "}
+        <span className={commonClasses.highlight}>programming</span>. When I
+        discovered <span className={commonClasses.highlight}>React</span>, it
+        has immediately become my favourite tool. I also like things organized
+        and simple.
       </p>
       <div data-aos="fade-up" data-aos-delay="800">
         <MyButton
