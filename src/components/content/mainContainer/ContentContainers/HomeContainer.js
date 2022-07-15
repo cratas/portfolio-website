@@ -32,7 +32,7 @@ const HomeContainer = () => {
         <span className={commonClasses.highlight}>creative things</span>. My favourite
         one is <span className={commonClasses.highlight}>programming</span>. When I've
         discovered <span className={commonClasses.highlight}>React</span>, it has
-        immediately became my favourite tool. I also like things organized and
+        immediately become my favourite tool. I also like things organized and
         simple.
       </p>
       <div data-aos="fade-up" data-aos-delay="800">
