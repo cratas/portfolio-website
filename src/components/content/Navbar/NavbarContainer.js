@@ -8,7 +8,8 @@ import classes from "./NavbarContainer.module.css";
 
 import mainLogo from "../../../assets/main-logo.png";
 import hoverLogo from "../../../assets/empty-logo.png";
-import resume from "../../../assets/resume.pdf";
+import englishResume from "../../../assets/resumeEN.pdf";
+import czechResume from "../../../assets/resumeCZ.pdf";
 import MyButton from "../UI/MyButton";
 
 const NavbarContainer = (props) => {
@@ -70,6 +71,11 @@ const NavbarContainer = (props) => {
     ? `${classes.toggleIconLine} ${classes.rotateRight}`
     : classes.toggleIconLine;
 
+  const openResumes = async () => {
+    await window.open(englishResume);
+    await window.open(czechResume);
+  }
+
   return (
     <Navbar sticky="top" expand="lg" className={`${classes.navbarContainer}`}>
       <Container className={classes.navbarWrapper}>
@@ -128,9 +134,9 @@ const NavbarContainer = (props) => {
           <Form className="d-flex flex-row-reverse justify-content-center bd-highlight">
             <MyButton
               customStyle={classes.navbarButtonAnimartion}
-              href={resume}
               target='_blank'
               rel="noreferrer"
+              onClick={openResumes}
             >
               Resume
             </MyButton>
