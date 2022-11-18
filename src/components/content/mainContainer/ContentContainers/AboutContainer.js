@@ -31,9 +31,9 @@ const AboutContainer = () => {
             , especially in
             <span style={{ color: "#fff", fontWeight: "bold" }}>
               {" "}
-              Django
+              Node & Django
             </span>{" "}
-            framework.
+            frameworks.
           </p>
 
           <p data-aos="fade-up">
@@ -74,17 +74,25 @@ const AboutContainer = () => {
               <Col>
                 <ul>
                   <li>JS ES6+</li>
-                  <li>HTML/CSS</li>
                   <li>React</li>
-                  <li>Django</li>
+                  <li>Node</li>
+                  <li>TypeScript</li>
                 </ul>
               </Col>
               <Col>
                 <ul>
+                  <li>Redux</li>
+                  <li>GraphQL</li>
                   <li>Git</li>
-                  <li>Java</li>
+                  <li>SQL</li>
+                </ul>
+              </Col>
+              <Col>
+                <ul>
                   <li>Python</li>
-                  <li>C/C++</li>
+                  <li>Django</li>
+                  <li>Java</li>
+                  <li>HTML/CSS</li>
                 </ul>
               </Col>
             </Row>
