@@ -10,8 +10,8 @@ import classes from "./WorkContainer.module.css";
 // import images
 import scenePic from "./../../../../assets/scene.jpg";
 import homeAutomationPic from "./../../../../assets/rooms.png";
-import AgriculturalPic from "./../../../../assets/agr-services.png";
-import RedditClonePic from "../../../../assets/reddit-clone.png";
+import SolarTech from "./../../../../assets/solartech.png";
+import KeyDestroyer from "../../../../assets/keydestroyer.png";
 import chuckNorrisAPI from "../../../../assets/chuck-jokes-generator.png";
 
 const WorkContainer = () => {
@@ -32,6 +32,17 @@ const WorkContainer = () => {
 
         <Project
           leftAlligned={true}
+          image={KeyDestroyer}
+          projectType={"Current project"}
+          projectName={"Key Destroyer"}
+          projectDescription={
+            "Key Destroyer is an app that anyone can use to test or practice their typing speed. Key Destroyer is highly customizable with the ability to change the theme, language and more from many settings. Any user can sign up and get the ability to customize everything to their liking and see stats of all kinds."
+          }
+          usedTechnologies={["TypeScript", "React", "Node", "GraphQl"]}
+        />
+
+        <Project
+          leftAlligned={false}
           image={homeAutomationPic}
           projectType={"Recent project"}
           projectName={"Home automation using RPi"}
@@ -42,29 +53,7 @@ const WorkContainer = () => {
         />
 
         <Project
-          leftAlligned={false}
-          image={AgriculturalPic}
-          projectType={"Recent project"}
-          projectName={"Agricultural services website"}
-          projectDescription={
-            "Simple agricultural services website implemented in React. The project focuses on the design and clarity of the user interface."
-          }
-          usedTechnologies={["React", "Bootstrap", "React router"]}
-        />
-
-        <Project
           leftAlligned={true}
-          image={RedditClonePic}
-          projectType={"Current project"}
-          projectName={"SolarTech Energy website"}
-          projectDescription={
-            "Website about SolarTech Energy Company which provides photovoltaic power plant solutions. The project focuses on the design and clarity of the user interface."
-          }
-          usedTechnologies={["React", "Material UI", "React router"]}
-        />
-
-        <Project
-          leftAlligned={false}
           image={scenePic}
           projectType={"Recent Project"}
           projectName={"OpenGL game engine"}
@@ -74,6 +63,16 @@ const WorkContainer = () => {
           usedTechnologies={["C++", "OpenGL", "OOP"]}
         />
 
+        <Project
+          leftAlligned={false}
+          image={SolarTech}
+          projectType={"Recent project"}
+          projectName={"SolarTech Energy website"}
+          projectDescription={
+            "Website about SolarTech Energy Company which provides photovoltaic power plant solutions. The project focuses on the design and clarity of the user interface."
+          }
+          usedTechnologies={["React", "Material UI", "React router"]}
+        />
         <Project
           leftAlligned={true}
           image={chuckNorrisAPI}

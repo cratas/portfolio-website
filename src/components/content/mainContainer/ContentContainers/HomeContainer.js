@@ -25,17 +25,16 @@ const HomeContainer = () => {
           Petr Kratochvíl.
         </h1>
         <h3 data-aos="fade-up" data-aos-delay="400">
-          Creative Frontend Developer.
+          Creative Full Stack Developer.
         </h3>
       </div>
       <p data-aos="fade-up" data-aos-delay="600">
         I'm passionate about doing{" "}
         <span className={commonClasses.highlight}>creative things</span>. My
         favourite one is{" "}
-        <span className={commonClasses.highlight}>programming</span>. When I
-        discovered <span className={commonClasses.highlight}>React</span>, it
-        has immediately become my favourite tool. I also like things organized
-        and simple.
+        <span className={commonClasses.highlight}>programming</span>. My biggest
+        passion is creating things for the web, especially using my favorite
+        tools <span className={commonClasses.highlight}>React</span> and <span className={commonClasses.highlight}>Node</span>. I also like things organized and simple.
       </p>
       <div data-aos="fade-up" data-aos-delay="800">
         <MyButton
