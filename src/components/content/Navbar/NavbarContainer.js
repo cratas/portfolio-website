@@ -10,10 +10,11 @@ import mainLogo from "../../../assets/main-logo.png";
 import hoverLogo from "../../../assets/empty-logo.png";
 import englishResume from "../../../assets/resumeEN.pdf";
 import MyButton from "../UI/MyButton";
+import { LINKS } from "../../../constants/navigation";
 
-const NavbarContainer = (props) => {
+const NavbarContainer = () => {
   const dispatch = useDispatch();
-  const linksState = useSelector((state) => state.nav);
+  const linksState = useSelector((state) => state.nav.currentLocation);
 
   const [isToggleActive, setIsToggleActive] = useState(false);
   const [isLogoHovered, setIsLogoHovered] = useState(false);
@@ -30,37 +31,25 @@ const NavbarContainer = (props) => {
     setIsLogoHovered(false);
   };
 
-  const linkHomeHandler = () => {
-    dispatch(navActions.linkHome());
-  };
+  const homeNavLinkClasses =
+    linksState === LINKS.home
+      ? `${classes.links} ${classes.active}`
+      : classes.links;
 
-  const linkAboutHandler = () => {
-    dispatch(navActions.linkAbout());
-  };
+  const aboutNavLinkClasses =
+    linksState === LINKS.about
+      ? `${classes.links} ${classes.active}`
+      : classes.links;
 
-  const linkWorkHandler = () => {
-    dispatch(navActions.linkWork());
-  };
+  const workNavLinkClasses =
+    linksState === LINKS.work
+      ? `${classes.links} ${classes.active}`
+      : classes.links;
 
-  const linkContactHandler = () => {
-    dispatch(navActions.linkContact());
-  };
-
-  const homeNavLinkClasses = linksState.home
-    ? `${classes.links} ${classes.active}`
-    : classes.links;
-
-  const aboutNavLinkClasses = linksState.about
-    ? `${classes.links} ${classes.active}`
-    : classes.links;
-
-  const workNavLinkClasses = linksState.work
-    ? `${classes.links} ${classes.active}`
-    : classes.links;
-
-  const contactNavLinkClasses = linksState.contact
-    ? `${classes.links} ${classes.active}`
-    : classes.links;
+  const contactNavLinkClasses =
+    linksState === LINKS.contact
+      ? `${classes.links} ${classes.active}`
+      : classes.links;
 
   const navbarToggleClassesFirst = isToggleActive
     ? `${classes.toggleIconLine} ${classes.rotateLeft}`
@@ -103,28 +92,28 @@ const NavbarContainer = (props) => {
             <Nav.Link
               className={homeNavLinkClasses}
               href="#home"
-              onClick={linkHomeHandler}
+              onClick={() => dispatch(navActions.changeLocation(LINKS.home))}
             >
               Home
             </Nav.Link>
             <Nav.Link
               className={aboutNavLinkClasses}
               href="#about"
-              onClick={linkAboutHandler}
+              onClick={() => dispatch(navActions.changeLocation(LINKS.about))}
             >
               About
             </Nav.Link>
             <Nav.Link
               className={workNavLinkClasses}
               href="#work"
-              onClick={linkWorkHandler}
+              onClick={() => dispatch(navActions.changeLocation(LINKS.work))}
             >
               Work
             </Nav.Link>
             <Nav.Link
               className={contactNavLinkClasses}
               href="#contact"
-              onClick={linkContactHandler}
+              onClick={() => dispatch(navActions.changeLocation(LINKS.contact))}
             >
               Contact
             </Nav.Link>

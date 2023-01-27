@@ -1,0 +1,1 @@
+export const LINKS = {home: 'home', about: 'about', work: 'work', contact: 'contact'}
