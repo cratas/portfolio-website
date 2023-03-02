@@ -25,7 +25,7 @@ const HomeContainer = () => {
           Petr Kratochvíl.
         </h1>
         <h3 data-aos="fade-up" data-aos-delay="400">
-          Creative Full Stack Developer.
+          Creative Software Developer.
         </h3>
       </div>
       <p data-aos="fade-up" data-aos-delay="600">

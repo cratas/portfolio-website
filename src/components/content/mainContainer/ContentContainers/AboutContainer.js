@@ -18,7 +18,7 @@ const AboutContainer = () => {
       <div className={classes.aboutWrapper}>
         <div className={classes.aboutLeft}>
           <p data-aos="fade-up">
-            My name is Petr Kratochvíl, software developer currently focusing on
+            My name is Petr Kratochvíl, Software Developer currently focusing on
             building{" "}
             <span style={{ color: "#fff", fontWeight: "bold" }}>
               things for web in React
