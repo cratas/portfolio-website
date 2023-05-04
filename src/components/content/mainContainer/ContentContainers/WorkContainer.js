@@ -13,6 +13,8 @@ import homeAutomationPic from "./../../../../assets/rooms.png";
 import SolarTech from "./../../../../assets/solartech.png";
 import KeyDestroyer from "../../../../assets/keydestroyer.png";
 import chuckNorrisAPI from "../../../../assets/chuck-jokes-generator.png";
+import EthereumApp from "../../../../assets/ether.png";
+
 
 const WorkContainer = () => {
   const openGithub = () => {
@@ -32,6 +34,17 @@ const WorkContainer = () => {
 
         <Project
           leftAlligned={true}
+          image={EthereumApp}
+          projectType={"Recent project"}
+          projectName={"Crypto Crowdfunding App"}
+          projectDescription={
+            "The application is built using TypeScript, React, Redux, and leverages the Ethers library to interact with the Ethereum blockchain. Additionally, the project uses Hardhat, which is a development environment that facilitates the creation and testing of smart contracts on Ethereum."
+          }
+          usedTechnologies={["TypeScript", "Redux", "Ethers", "Hardhat"]}
+        />
+
+        <Project
+          leftAlligned={false}
           image={KeyDestroyer}
           projectType={"Current project"}
           projectName={"Key Destroyer"}
@@ -42,7 +55,7 @@ const WorkContainer = () => {
         />
 
         <Project
-          leftAlligned={false}
+          leftAlligned={true}
           image={homeAutomationPic}
           projectType={"Recent project"}
           projectName={"Home automation using RPi"}
@@ -53,7 +66,7 @@ const WorkContainer = () => {
         />
 
         <Project
-          leftAlligned={true}
+          leftAlligned={false}
           image={scenePic}
           projectType={"Recent Project"}
           projectName={"OpenGL game engine"}
@@ -64,7 +77,7 @@ const WorkContainer = () => {
         />
 
         <Project
-          leftAlligned={false}
+          leftAlligned={true}
           image={SolarTech}
           projectType={"Recent project"}
           projectName={"SolarTech Energy website"}
@@ -74,7 +87,7 @@ const WorkContainer = () => {
           usedTechnologies={["React", "Material UI", "React router"]}
         />
         <Project
-          leftAlligned={true}
+          leftAlligned={false}
           image={chuckNorrisAPI}
           projectType={"Recent Project"}
           projectName={"Chuck Norris jokes generator"}
